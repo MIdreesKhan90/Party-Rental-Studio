@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="author" content=""/>
+
+  <link href="https://example.com/" rel="canonical"/> <!-- preferred URL - change for you site -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link href="{{ '/css/foundation.css' }}" rel="stylesheet">
+  <link href="{{ '/css/styles.css' }}" rel="stylesheet">
+
+</head>
+<body class="text-light">
+<div id="overlay"></div>
+<div id="prs-logo-mobile">
+  <a href="#">
+    <img src="{{ '/assets/images/partyrentalstudio.svg' }}" alt="Party Rental Studio Logo"></a>
+</div>
+<div id="toggleMenuContainer"><a href="#" class="toggle-nav"><span></span></a></div>
+<nav id="primary">
+  <div class="row">
+    <a href="https://www.partyrentalstudio.com">
+      <div id="prs-logo">
+        <img src="{{ '/assets/images/partyrentalstudio.svg' }}" alt="Party Rental Studio Logo">
+      </div>
+    </a>
+    <ul class="menu">
+      <li><a href="{{ '/pages/pricing' }}">Pricing</a></li>
+      <li><a href="{{ '/pages/customer-testimonials' }}">Success Stories</a></li>
+      <li><a href="{{ '/pages/party-rental-website-design' }}">Website Design</a></li>
+      <li><a href="{{ '/pages/articles' }}">Articles</a></li>
+      <li><a href="{{ '/pages/freeTrial' }}" class="prs-button-cta">Free Trial</a></li>
+      <li><a href="{{ '/pages/log-out' }}" class="prs-button">Sign In</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="main">
+
+  {% block content %}
+    {{ content | safe }}
+  {% endblock %}
+</div>
+<footer role="sitemap">
+  <div class="row">
+    <div class="small-24 large-12 prslogo columns">
+      <img src="{{ '/assets/images/partyrentalstudio.svg' }}">
+    </div>
+    <div class="small-24 large-12 copyright columns"> Copyright © 2019 Kreetiv Studio. All rights reserved. </div>
+  </div>
+</footer>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="{{ '/assets/js/jquery-2.1.4.min.js' }}"></script>
+<script src="{{ '/assets/js/main.js' }}"></script>
+
+</body>
+</html>

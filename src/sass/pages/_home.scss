@@ -1,0 +1,411 @@
+.section-hero {
+  padding-top: 75px;
+  background-color: #f4eee6;
+  .hero-content {
+    text-align: center;
+    h2 {
+      font-size: 32px !important;
+      font-weight: 300px !important;
+      letter-spacing: 8px !important;
+      font-family: "Inter", sans-serif !important;
+      margin: 10px 0 !important;
+      @include grid-lg-down {
+        font-size: 27px !important;
+      }
+    }
+    h1 {
+      font-family: "Inter", sans-serif !important;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+    p {
+      margin: 0;
+    }
+    .search-form {
+      max-width: 550px;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px auto;
+      @include grid-lg-down {
+        max-width: 100%;
+        flex-flow: column;
+      }
+      input {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 0;
+        height: 54px;
+        width: 364px;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: white;
+        border: none;
+        padding: 2px 19px;
+        font-family: "Inter", sans-serif !important;
+        @include grid-lg-down {
+          width: 100%;
+          padding: 2px 0px;
+          text-indent: 10px;
+          margin-bottom: 15px;
+        }
+        &:focus {
+          outline: none;
+          border: none;
+        }
+      }
+    }
+    .sign-up-second {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 28px;
+      @include grid-lg-down {
+        padding-left: 0;
+        margin-bottom: 20px;
+      }
+      li {
+        position: relative;
+        padding-left: 22px;
+        font-family: "Inter", sans-serif !important;
+        font-size: 14px;
+        font-weight: 400;
+        @include grid-lg-down {
+          font-size: 11px;
+        }
+        span {
+          position: absolute;
+          left: -2px;
+          top: -1px;
+          @include grid-lg-down {
+            left: -4px;
+          }
+        }
+        + li {
+          margin-left: 40px;
+          @include grid-lg-down {
+            margin-left: 24px;
+          }
+        }
+      }
+    }
+    .btn-outline {
+      border: 1px solid rgba(33, 37, 41, 0.1);
+      border-radius: 60px;
+      padding: 15px 23px;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Inter", sans-serif !important;
+      span {
+        display: inline-block;
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+// events
+.section-events {
+  .events-head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f4eee6;
+    padding-bottom: 67px;
+    @include grid-lg-down {
+      display: block;
+      padding-bottom: 30px;
+    }
+    h2 {
+      text-align: left;
+      margin: 0;
+      font-family: "Merriweather", serif;
+      text-transform: capitalize;
+      @include grid-lg-down {
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      margin: 0 0 0 84px;
+      max-width: 725px;
+      font-weight: 300;
+      padding-right: 30px;
+      font-family: "Inter", sans-serif !important;
+      @include grid-lg-down {
+        margin: 0;
+      }
+    }
+  }
+  .events-content {
+    max-width: 937px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 68px;
+    @include grid-lg-down {
+      margin-top: 11px;
+      text-align: left;
+    }
+    h3 {
+      font-family: "Merriweather", serif;
+      font-weight: 300;
+      line-height: 48px;
+      margin: 0;
+      @include grid-lg-down {
+        line-height: 35px;
+      }
+    }
+  }
+}
+
+// reports
+.section-reports {
+  .flex-row {
+    > div{
+      &:first-child{
+        padding-right: 70px;
+      }
+    }
+    .row-content {
+      width: 50%;
+      padding-top: 40px;
+      @include grid-lg-down {
+        width: 100%;
+        padding-top: 0;
+      }
+      .title {
+        padding-right: 20px;
+        .sub-title {
+          margin: 0;
+          margin-bottom: 16px;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 500;
+          font-family: "Inter", sans-serif !important;
+        }
+        h2 {
+          margin: 0;
+          font-family: "Merriweather", serif;
+          text-align: left;
+          text-transform: lowercase;
+          @include grid-lg-down {
+            font-size: 20px !important;
+          }
+        }
+      }
+      p {
+        font-size: 18px;
+        font-family: "Inter", sans-serif !important;
+        padding-right: 72px;
+        line-height: 25px;
+        margin: 15px 0;
+        @include grid-lg-down {
+          padding: 0;
+        }
+      }
+    }
+    .row-img {
+      width: 50%;
+      @include grid-lg-down {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// moments
+.moments-content {
+  text-align: center;
+  max-width: 815px;
+  margin: 0 auto;
+  img{
+    margin-bottom: 15px;
+  }
+  h4{
+    font-family: "Merriweather", serif;
+  }
+  .about-customer {
+    display: flex;
+    justify-content: center;
+    @include grid-lg-down {
+      display: block;
+    }
+    .c-name {
+      margin-right: 10px;
+      h5 {
+        margin: 0;
+        font-weight: 500;
+        font-size: 18px;
+        font-family: "Inter", sans-serif !important;
+      }
+    }
+    .c-moments {
+      margin: 0;
+      margin-right: 10px;
+      font-size: 18px;
+      font-family: "Inter", sans-serif !important;
+    }
+    .c-ga {
+      font-size: 18px;
+      font-family: "Inter", sans-serif !important;
+    }
+  }
+  .issue-date {
+    h6 {
+      margin: 0;
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: "Inter", sans-serif !important;
+    }
+  }
+}
+// features
+.section-features {
+  .section-title {
+  margin-bottom: 69px;
+  }
+  .feature {
+    width: 50%;
+    margin-bottom: 42px;
+    @include grid-lg-down {
+      width: 100%;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      @include grid-lg-down {
+        padding-left: 0;
+      }
+      li {
+        position: relative;
+        padding-left: 30px;
+        span {
+          position: absolute;
+          left: -13px;
+          top: -1px;
+        }
+        h3 {
+          font-weight: 400;
+          font-family: "Merriweather", serif;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+        p {
+          max-width: 366px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+// section-reviews
+.section-reviews {
+  .review {
+    width: 33.33%;
+    @include grid-lg-down {
+      width: 100%;
+    }
+    ul {
+      list-style: none;
+      @include grid-lg-down {
+        padding-left: 0;
+      }
+      li {
+        h3 {
+          margin: 17px 0 12px 0;
+          font-family: "Merriweather", serif;
+        }
+        .review-details {
+          h6 {
+            margin: 20px 0 10px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "Inter", sans-serif !important;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 300;
+            font-family: "Inter", sans-serif !important;
+            margin: 0;
+            + p {
+              margin-top: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .review-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 67px;
+    button {
+      @include grid-lg-down {
+        font-size: 12px;
+      }
+
+      + button {
+        margin-left: 10px;
+      }
+    }
+    @include grid-lg-down {
+      margin-top: 20px;
+    }
+  }
+}
+// section-articles
+
+.section-articles {
+  .buttons {
+    margin: 67px auto 90px;
+    @include grid-lg-down {
+      margin: 20px auto 0;
+    }
+  }
+}
+
+// section-articles
+
+.section-articles {
+  .card {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100%;
+    .card-img {
+      img {
+        width: 100%;
+      }
+    }
+    .card-title {
+      padding: 10px;
+      h6 {
+        font-size: 13px;
+        font-weight: 500;
+        color: #028871;
+        font-family: "Inter", sans-serif !important;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      h3 {
+        font-size: 24px;
+        color: #1a4954;
+        font-weight: 400;
+        font-family: "Merriweather", serif;
+        margin: 0;
+      }
+    }
+    .card-body {
+      padding: 10px;
+      p {
+        margin: 0 0 10px;
+      }
+    }
+  }
+  .flex-row {
+    margin-top: 50px;
+  }
+  .buttons {
+    text-align: center;
+  }
+}

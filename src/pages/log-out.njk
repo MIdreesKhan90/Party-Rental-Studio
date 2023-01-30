@@ -1,0 +1,32 @@
+---
+
+title: Log Out
+layout: log.njk
+---
+<span>
+    <form id="loginForm" class="box py-6 mt-4">
+        <div class="field">
+            <div class="control has-icons-right">
+                <span>
+                    <input type="text" placeholder="e.g. alex@example.com" class="input is-medium">
+                    <span class="has-text-danger" style="display: none;"></span>
+                </span>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control has-icons-right">
+                <span>
+                    <input type="password" placeholder="********" class="input is-medium">
+                    <span class="has-text-danger" style="display: none;"></span>
+                </span>
+            </div>
+        </div>
+        <div class="field">
+            <input type="checkbox" id="checkbox">Keep me signed in
+        </div>
+        <button type="submit" class="button is-primary is-fullwidth is-medium mt-5">Sign in</button>
+    </form>
+</span>
+<div class="has-text-centered" style="margin-top: 6.5%;">
+    <a href="{{ '/pages/login-forgot' }}" class="link ">Forgot Your Password ? </a>
+</div>

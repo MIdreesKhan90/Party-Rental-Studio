@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////
+/*
+
+     @include grid-md {
+        min-height: 40vh;
+    }
+
+*/
+////////////////////////////////////////////////////
+
+
+@mixin grid-sm {
+  @media #{$sm-em} {
+    @content;
+  }
+}
+
+@mixin grid-md {
+  @media #{$md-em} {
+    @content;
+  }
+}
+
+@mixin grid-lg {
+  @media #{$lg-em} {
+    @content;
+  }
+}
+@mixin grid-lg-down {
+  @media #{$lg-down-em} {
+    @content;
+  }
+}
+
+@mixin grid-xl {
+  @media #{$xl-em} {
+    @content;
+  }
+}
+
+@mixin kreeShadow {
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+@mixin kreeTransition {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}

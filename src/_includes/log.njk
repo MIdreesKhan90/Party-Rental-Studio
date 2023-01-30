@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="author" content=""/>
+
+  <link href="https://example.com/" rel="canonical"/> <!-- preferred URL - change for you site -->
+
+  <link href="{{ '/css/foundation.css' }}" rel="stylesheet">
+  <link href="{{ '/css/styles.css' }}" rel="stylesheet">
+
+</head>
+<body>
+<div id="login" class="main">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-4">
+        <div class="login-logo">
+          <img src="{{ '/assets/images/partyrentalstudio.svg' }}" alt="Party Rental Studio">
+        </div>
+        {% block content %}
+          {{ content | safe }}
+        {% endblock %}
+
+      </div>
+    </div>
+  </div>
+  <div tabindex="0" aria-label="Loading" class="vld-overlay is-active is-full-page" style="display: none;">
+    <div class="vld-background" style="backdrop-filter: blur(2px);"></div>
+    <div class="vld-icon">
+      <svg viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" width="64" height="64" stroke="#000">
+        <g fill="none" fill-rule="evenodd">
+          <g transform="translate(1 1)" stroke-width="2">
+            <circle stroke-opacity=".25" cx="18" cy="18" r="18"></circle>
+            <path d="M36 18c0-9.94-8.06-18-18-18">
+              <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18"
+                                dur="0.8s" repeatCount="indefinite"></animateTransform>
+            </path>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

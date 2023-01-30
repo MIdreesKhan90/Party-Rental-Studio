@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*
+
+Includes the following custom build from Zurb Foundation 6.2.3:
+
+- 24 columns
+- 75 rem max-width
+- 1.875 rem gutter
+
+- grid
+- typography
+- forms
+- float classes
+- visibility classes
+- buttons
+- close button
+- button group
+- breadcrumbs
+- pagination
+- table
+
+*/
+
+@import "components/variables";
+@import "components/typography";
+@import "components/theme-mixin"; //responsive mixins
+@import "components/css3-mixins";
+@import "components/template_global";
+@import "components/template_homepage";
+@import "components/template_subpage";
+@import "components/utility"; //foundation extension, helpers, responsive helpers
+
+// **** If using WP Blank HTML5, clean out all styling form theme_folder/style.css
+@import "components/wordpress-core";
+
+// **** Include if using default mobile menu
+@import "components/primaryNav";
+@import "components/form";
+@import "components/shamefuloverride";
+
+@import "components/base";
+@import "pages/home";
+@import "pages/article-single";

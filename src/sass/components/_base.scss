@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    color: #1A4954 !important;
+}
+body{
+    font-size: 18px;
+    font-weight: 300;
+    color: #1A4954;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    @include grid-lg-down {
+        padding-left: 15px;
+        padding-right: 15px;
+
+           }
+}
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    &.md-block{
+        @include grid-lg-down {
+           display: block;
+            }
+    }
+}
+    h1{
+        font-size: 50px;
+        font-weight: 700;
+        @include grid-lg-down {
+          font-size: 29px;
+             }
+    }
+     h2{
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        @include grid-lg-down {
+            font-size: 20px !important;
+               }
+    }
+     h2.text-sm{
+        font-size: 32px;
+        font-weight: 300;
+        @include grid-lg-down {
+            font-size: 18px;
+               }
+    }
+     h3{
+        font-weight: 400;
+        font-size: 26px;
+        @include grid-lg-down {
+          font-size: 20px;
+                          }
+    }
+     h3.text-sm{
+        font-size: 28px;
+        @include grid-lg-down {
+            font-size: 24px;
+               }
+    }
+     h4{
+        font-size: 24px;
+        @include grid-lg-down {
+            font-size: 20px;
+               }
+    }
+     h5{
+        font-size: 18px;
+        @include grid-lg-down {
+            font-size: 16px;
+
+    }
+}
+     h5.text-sm{
+        font-size: 16px;
+        @include grid-lg-down {
+            font-size: 14px;
+               }
+    }
+     h6{
+        font-size: 14px;
+    }
+     .text-small{
+        font-size: 14px;
+    }
+     .text-green{
+        color: #028871;
+    }
+    .sub-title{
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+     p{
+    font-size: 18px;
+}
+.section{
+    padding: 90px 0;
+    @include grid-lg-down {
+        padding: 40px 0;
+         }
+}
+.btn-green{
+    padding: 17px 19px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    background-color: #028871;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif !important;
+    border-radius: 3px;
+    cursor: pointer
+}
+.btn-green-outline{
+    padding: 17px 19px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #028871;
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif !important;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.row-img{
+    .img-fluid{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.text-right{
+    text-align: right;
+}
+.text-dark{
+    color: #3d444b m !important;
+}
+.mb-90{
+    margin-bottom: 90px;
+    @include grid-lg-down {
+        margin-bottom: 40px ;
+         }
+}
+.bg-light{
+    background-color: #f4eee6;
+}
+.bg-white{
+    background-color: white;
+}
+.mt-5{
+    margin-top: 46px;
+}
+.mt-40{
+    margin-top: 40px;
+    @include grid-lg-down {
+        margin-top: 20px ;
+         }
+}
+.links{
+    font-weight: 500;
+    font-size: 18px;
+    color: #028871
+    ;
+}
+.text-center{
+    text-align: center;
+}
+.col-md-4{
+    width: 33.33%;
+    padding:0 24px;
+    @include grid-lg-down {
+        width: 100%;
+        padding: 0;
+                  }
+}
+body{
+    color: #1A4954 !important;
+}
+.md-reverse{
+    @include grid-lg-down {
+        flex-direction: column-reverse;
+                  }
+}
+.col-6{
+    width: 50%;
+    @include grid-lg-down {
+       width: 100%;
+                  }
+}
+.w-100{
+    width: 100%;
+}
+ .section-title {
+    margin-bottom: 50px;
+    > h6 {
+      font-family: "Inter", sans-serif !important;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    > h2 {
+      margin: 0;
+      margin-bottom: 16px;
+      font-family: "Merriweather", serif;
+      text-transform: capitalize;
+    }
+    > p {
+      margin-bottom: 50px;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      max-width: 865px;
+      margin: 0 auto;
+      font-family: "Inter", sans-serif !important;
+    }
+  }

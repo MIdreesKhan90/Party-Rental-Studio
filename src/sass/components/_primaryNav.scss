@@ -1,0 +1,298 @@
+/*--------------------------------------
+Global Styles for Primary Menu
+--------------------------------------*/
+
+/* Add transition to containers so they can push in and out. */
+
+#wrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+nav, #overlay, #toggleMenuContainer, nav#primary, #prs-logo {
+  @include kreeTransition();
+}
+
+#overlay {
+    opacity: 0;
+    visibility: hidden;  
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw; height: 100%;
+    position: fixed;
+    top: 0; right: 0;
+    margin: auto;
+    z-index: 99;
+}
+
+/*--------------------------------------
+Primary Nav
+--------------------------------------*/
+
+nav#primary-lean {
+  #prs-logo {
+    margin-top: 2em;
+    padding-left: 14px;
+    
+    img {
+      width: 320px;
+    }
+
+    @include grid-lg {
+      
+    }
+
+  }
+}
+
+nav#primary {
+
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    text-align: center;
+
+    @include grid-lg {
+
+        opacity: 1;
+        visibility: visible;
+        text-align: initial;
+        display: block;
+        z-index:1000;
+        
+        ///////////////////////////////////////////////////
+        // Comment the 2 lines below to make standard nav (non-fixed)
+        ///////////////////////////////////////////////////
+
+        position: relative;
+        width: 100%;
+
+        ///////////////////////////////////////////////////
+
+        &.sticky {
+          position: fixed;
+          background-color: rgba(255,255,255,0.9);
+          top: 0;
+          width: 100%;
+          //height: 150px;
+          box-shadow: 0px 30px 60px -45px #000000, -1px 0 0 rgba(0,0,0,.1);
+          -webkit-overflow-scrolling: touch;
+
+          #prs-logo {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+          }
+
+        }        
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    #prs-logo {
+      float: none;
+      margin-top: 2em;
+      padding-left: 14px;
+      display: inline-block;
+      display: none;
+
+      @include grid-lg {
+        float: left;
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        img {
+            width: 320px;
+          }
+      }
+
+    }
+
+    ul.menu {
+        margin:0; 
+        padding: 28px 0 0 0;
+        display: inline-block;
+        float: none;
+
+        @include grid-lg {
+
+            height: auto;
+            float: right;
+
+            li {
+                display: inline-block;
+            }
+        }
+
+        li {
+            padding: 10px 4px;
+            margin-bottom: 5px;
+            
+            /*--------------------------------------
+            Links Styling
+            --------------------------------------*/
+
+            a {
+              font-size: 1.3rem;
+              text-transform: uppercase;
+              color: #fff;
+              font-weight: 300;
+              font-family: 'Oswald', sans-serif;
+              padding: 6px 30px;
+
+              @include grid-lg {
+                padding: 6px 8px;
+              }
+
+              @include grid-xl {
+                padding: 6px 14px;
+              }
+
+              @include grid-lg {
+                color: #3d444b;
+              }
+
+            }
+
+        }
+    }
+}
+
+/*--------------------------------------
+Mobile Menu Toggle
+--------------------------------------*/
+
+#prs-logo-mobile {
+  margin: 20px 18px 0 0;
+  padding-left: 14px;
+  img {
+    max-width: 260px;
+  }
+
+  @include grid-lg {
+    display: none;
+  }
+
+}
+
+#toggleMenuContainer {
+    z-index: 100;
+    position: fixed;
+    top: 18px;
+    right: 8px;
+    background-color: rgba(255,255,255,0.8);
+    @include grid-lg {
+        display: none;
+    }
+}
+
+.toggle-nav{
+  width: 55px;
+  height: 55px;
+  display: block;
+
+    @include grid-sm {
+        top: 6px;        
+    }  
+  
+  &:after,
+  &:before {
+    content: "";
+  }
+  
+  span,
+  &::after,
+  &::before {
+    backface-visibility: hidden;
+    position: absolute;
+    left: 13px;
+    right: 13px;
+    border-top: 4px solid $primary-color;
+    transition: .2s;
+    border-radius: 6px;
+  }
+  
+  &::before {
+    top: 18px;
+  }
+
+  span {
+    top: 26px;
+  }
+
+  &::after {
+    top: 34px;
+  }
+
+  &.active {
+    &::before,
+    &::after {
+      top: 25px;
+      backface-visibility: hidden;
+      transition: .3s;
+      border-top-color: #fff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    span {
+      opacity: 0;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+/*--------------------------------------
+Active Menu Wrapper
+--------------------------------------*/
+body.menu-active {
+
+    #overlay {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    #toggleMenuContainer {
+        background-color: transparent;
+    }
+
+    nav#primary {
+        opacity: 1;
+        visibility: visible;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: block;
+        margin: 30px 0 0 0; //added top margin to avoid overlapping with close button
+        z-index: 99999;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 100vh;
+        height: 90vh;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+
+          ul.menu li .prs-button, ul.menu li .prs-button-cta {
+            border-radius: 0;
+            background: transparent;
+            //padding: 0;
+            border: none;
+            color: #fff !important;
+            transform: scale(1);
+          }
+
+    }
+}

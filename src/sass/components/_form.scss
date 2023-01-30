@@ -1,0 +1,107 @@
+// section-form
+.section-form {
+  .section-title {
+    margin-bottom: 46px;
+  }
+  .submit-form {
+    margin: 0 auto;
+    margin-top: 46px;
+    @include grid-lg-down {
+      margin: 0;
+      width: 100%;
+    }
+    .form-row {
+      display: flex;
+      justify-content: center;
+      @include grid-lg-down {
+        flex-flow: column;
+      }
+      .form-group {
+        width: 100%;
+        input {
+          width: 403px;
+          height: 58px;
+          background-color: white;
+          border-radius: 3px;
+          border: 1px solid #c4c4c4;
+          padding: 0 15px;
+          margin-bottom: 15px;
+          font-size: 16px;
+          font-weight: 300;
+          color: #1a4954;
+          @include grid-lg-down {
+            width: 100%;
+          }
+          &:focus {
+            outline: none;
+            border: 1px solid #c4c4c4;
+          }
+        }
+        select {
+          width: 403px;
+          height: 58px;
+          background-color: white;
+          border-radius: 3px;
+          border: 1px solid #c4c4c4;
+          padding: 0 15px;
+          margin-bottom: 15px;
+          font-size: 16px;
+          font-weight: 300;
+          color: #1a4954;
+          &:focus {
+            outline: none;
+            border: 1px solid #c4c4c4;
+          }
+        }
+        + .form-group {
+          margin-left: 20px;
+          @include grid-lg-down {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    textarea {
+      width: 100%;
+      background-color: white;
+      border-radius: 3px;
+      border: 1px solid #c4c4c4;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: 300;
+      color: #1a4954;
+      @include grid-lg-down {
+        width: 99.5%;
+      }
+      &:focus {
+        outline: none;
+        border: 1px solid #c4c4c4;
+      }
+    }
+    .buttons {
+      text-align: right;
+      @include grid-lg-down {
+        text-align: center;
+      }
+      button {
+        padding: 20px 91px;
+      }
+    }
+    .checkbox {
+      margin: 15px 0;
+      display: flex;
+      p {
+        margin: 0;
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .g-recaptcha {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,248 @@
+/* html,
+body {
+    height: 100%;
+} */
+
+
+/*--------------------------------------
+Body
+--------------------------------------*/
+html, body {
+    margin:0; padding:0; border:0;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #3B9768;
+    outline: 0;
+    border: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+    height: auto;
+}
+
+ul {
+    //padding:0;margin:0;
+    &.inline li {
+        display: inline-block;
+        list-style: none;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+ul.inline, ol.inline {
+  margin-left: 0;
+  list-style: none;
+}
+nav ul, nav ol {
+  list-style: none;
+}
+
+/*--------------------------------------
+Global Styles
+--------------------------------------*/
+
+main{
+
+}
+
+/*--------------------------------------
+Header
+--------------------------------------*/
+header {
+  color: #fff;
+  padding: 0;
+  position: relative;
+  .headline {
+      padding: 60px 24px 36px;
+      text-align: center;
+      h1 {margin-bottom: 0.4rem;}
+      p {margin-bottom: 0;}
+    @include grid-md {
+      padding: 100px 60px 36px;
+    }
+    @include grid-lg {
+      padding: 120px 120px 54px;
+    }
+    &.leftAligned {
+      text-align: left;
+      padding: 120px 14px 54px;
+      h1 {
+        font-size: 2.6rem;
+      }
+    }
+    //not used
+    &.reversed {
+      padding: 120px 14px 0px;
+    }
+  }
+}
+
+header.front-page {
+  
+}
+
+header.front-page:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  height: 110px;
+  -webkit-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+  overflow: visible;
+  width: 100%;
+  background: -moz-linear-gradient(top, #fefefe 0%, #efefef 100%);
+  background: -webkit-linear-gradient(top, #fefefe 0%, #efefef 100%);
+  background: linear-gradient(to bottom, #fefefe 0%, #efefef 100%);
+
+  @media only screen and (max-width: 1024px) {
+    -webkit-transform: skewY(0deg);
+    transform: skewY(0deg); 
+    height: 40px;  
+  }
+
+}
+
+#sub-section, #sub-section-white {
+  padding: 60px 0;
+}
+
+#sub-section-white {
+  background-color: #fff;
+}
+
+#sub-section {
+  background-color: #f4f4f4;
+
+  .sub-section-wrapper {
+    position: relative;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  &.lean {
+    padding: 0 0;
+  }
+
+}
+
+/*--------------------------------------
+Free Trial
+--------------------------------------*/
+
+#free-trial {
+  background: linear-gradient(90deg, #55b070 0%, #3b9768 100%);
+  color: #fff;
+  padding: 60px 0;
+  h2, p {color: #fff;}
+  h2 {text-align: left; font-size: 2.2rem; margin-bottom: 0.8rem !important;}
+
+  input[type=text], textarea {
+    padding: 6px 12px;
+  }
+
+  &.sub-plain {
+    background: #fff;
+    color: #444;
+    h2, p {color: #444;} 
+  }
+
+}
+
+/*--------------------------------------
+Right Column (Multi Column Articles)
+--------------------------------------*/
+  #sub-section {
+    aside {
+
+      ul {margin-bottom: 48px;}
+
+      h2.widget-title {
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.4rem;
+        //background-color: #fff;
+        color: #444;
+        //padding: 4px 8px;
+      }
+    }
+  }
+
+/*--------------------------------------
+Footer
+--------------------------------------*/
+
+footer {
+  background-color: #f4f4f4;
+  //background-color: $secondary-color;
+  padding: 28px 0 22px;
+
+  .prslogo {
+    text-align: center;
+    img {
+      max-width: 240px;
+    }
+    @include grid-lg {
+      text-align: left;
+    }
+  }
+  .copyright {
+    padding-top: 16px;
+    text-align: center;
+    @include grid-lg {
+      text-align: right;
+    }
+  }
+
+  ul.footer-menu {
+    list-style: none;
+    padding-top: 10px;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin-left: 14px;
+      a {
+        font-size: 1.2rem;
+        color: #3b9768;
+      }
+    }
+  }
+
+}

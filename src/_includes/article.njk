@@ -1,0 +1,26 @@
+---
+layout: 'base.njk'
+---
+
+<div class="container">
+    <div class="page-title">
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
+    </div>
+ </div>
+    <section class="section-share-post section">
+            <div class="container">
+                <div class="social-shares">
+                    <h5>Shares:</h5>
+                    <a href=""><img src="./assets/images/demo/email.svg" alt=""></a>
+                    <a href=""><img src="./assets/images/demo/linkedin.svg" alt=""></a>
+                    <a href=""><img src="./assets/images/demo/twitter.svg" alt=""></a>
+                    <a href=""><img src="./assets/images/demo/facebook.svg" alt=""></a>
+                    <a href=""><img src="./assets/images/demo/google.svg" alt=""></a>
+                </div>
+
+                <div class="post-content">
+                    {{ content | safe }}
+                </div>
+            </div>
+    </section>
