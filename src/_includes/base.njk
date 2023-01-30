@@ -31,17 +31,17 @@
       </div>
     </a>
     <ul class="menu">
-      <li><a href="{{ '/pages/pricing' }}">Pricing</a></li>
-      <li><a href="{{ '/pages/customer-testimonials' }}">Success Stories</a></li>
-      <li><a href="{{ '/pages/party-rental-website-design' }}">Website Design</a></li>
-      <li><a href="{{ '/pages/articles' }}">Articles</a></li>
-      <li><a href="{{ '/pages/freeTrial' }}" class="prs-button-cta">Free Trial</a></li>
-      <li><a href="{{ '/pages/log-out' }}" class="prs-button">Sign In</a></li>
+      <li><a href="{{ '/pricing' }}">Pricing</a></li>
+      <li><a href="{{ '/customer-testimonials' }}">Success Stories</a></li>
+      <li><a href="{{ '/party-rental-website-design' }}">Website Design</a></li>
+      <li><a href="{{ '/articles' }}">Articles</a></li>
+      <li><a href="{{ '/free-trial' }}" class="prs-button-cta">Free Trial</a></li>
+      <li><a href="{{ '/log-out' }}" class="prs-button">Sign In</a></li>
     </ul>
   </div>
 </nav>
-<div class="main">
 
+<div class="main">
   {% block content %}
     {{ content | safe }}
   {% endblock %}
@@ -57,6 +57,7 @@
 
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="{{ '/assets/js/jquery-2.1.4.min.js' }}"></script>
+<script src="{{ '/assets/js/jquery.mask.min.js' }}"></script>
 <script src="{{ '/assets/js/main.js' }}"></script>
 
 </body>
