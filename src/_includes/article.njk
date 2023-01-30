@@ -10,14 +10,6 @@ layout: base.njk
  </div>
     <section class="section-share-post section">
             <div class="container">
-                <div class="social-shares">
-                    <h5>Shares:</h5>
-                    <a href="mailto:?subject={{ title }}&amp;body=%20{{ page.url }}"><img src="/assets/images/demo/email.svg" alt="Email"></a>
-                    <a href="https://www.linkedin.com/shareArticle?url={{ page.url }}&title={{ title }}" onclick="window.open(this.href, 'popupwindow', 'width=500,height=300'); return false;" target="_blank"><img src="/assets/images/demo/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="http://www.facebook.com/sharer.php?u={{ page.url }}" onclick="window.open(this.href, 'popupwindow', 'width=500,height=300'); return false;" target="_blank"><img src="/assets/images/demo/facebook.svg" alt="Facebook"></a>
-                    <a href="https://twitter.com/share?url={{ page.url }}&text='{{ title }}'" onclick="window.open(this.href, 'popupwindow', 'width=500,height=300'); return false;"target="_blank"><img src="/assets/images/demo/twitter.svg" alt="Twitter"></a>
-                </div>
-
                 <div class="post-content">
                     {{ content | safe }}
                 </div>

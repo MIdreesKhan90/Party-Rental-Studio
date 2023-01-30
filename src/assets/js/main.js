@@ -94,7 +94,6 @@ jQuery(function ($) {
       data: data,
       dataType: "JSON",
       success: function (res) {
-        console.log(res);
         btn.text('Submit');
       },
       error: function (xhr, status, error) {
