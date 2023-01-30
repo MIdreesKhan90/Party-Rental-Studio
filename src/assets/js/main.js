@@ -1,5 +1,5 @@
 jQuery(function ($) {
-  // $('.js-phone_us').mask('000-000-0000');
+  $('.js-phone_us').mask('000-000-0000');
 
   /*--------------------------------------
      Mobile Menu
