@@ -1,4 +1,5 @@
 {
   "layout" : "page.njk",
-  "tags" : "pages"
+  "tags" : "pages",
+  "permalink" : "{{ page.fileSlug | slugify }}/index.html"
 }
