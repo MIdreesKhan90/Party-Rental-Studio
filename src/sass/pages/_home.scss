@@ -5,22 +5,25 @@
     text-align: center;
     h2 {
       font-size: 32px !important;
-      font-weight: 300px !important;
+      font-weight: 300 !important;
       letter-spacing: 8px !important;
-      font-family: $font-family-header;
-      margin: 10px 0 !important;
+      font-family: $font-family-body;
+      margin-bottom: -2px;
       @include grid-lg-down {
         font-size: 27px !important;
       }
     }
     h1 {
       font-family: $font-family-header;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-transform: capitalize;
+      font-size: 54px;
     }
     p {
       margin: 0;
+      font-size: 24px;
+      font-family: $font-family-body;
+      letter-spacing: -1px;
     }
     .search-form {
       max-width: 550px;
@@ -37,12 +40,14 @@
         margin-bottom: 0;
         height: 54px;
         width: 364px;
-        font-size: 14px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 300;
         background-color: white;
+        font-style: italic;
         border: none;
         padding: 2px 19px;
-        font-family: $font-family-header;
+
+        font-family: $font-family-body;
         @include grid-lg-down {
           width: 100%;
           padding: 2px 0px;
@@ -67,7 +72,7 @@
       li {
         position: relative;
         padding-left: 22px;
-        font-family: $font-family-header;
+        font-family: $font-family-body;
         font-size: 14px;
         font-weight: 400;
         @include grid-lg-down {
@@ -95,7 +100,7 @@
       padding: 15px 23px;
       font-size: 14px;
       font-weight: 400;
-      font-family: $font-family-header;
+      font-family: $font-family-body;
       span {
         display: inline-block;
         margin-right: 7px;
@@ -132,25 +137,6 @@
       font-family: $font-family-body;
       @include grid-lg-down {
         margin: 0;
-      }
-    }
-  }
-  .events-content {
-    max-width: 937px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 68px;
-    @include grid-lg-down {
-      margin-top: 11px;
-      text-align: left;
-    }
-    h3 {
-      font-family: $font-family-header;
-      font-weight: 300;
-      line-height: 48px;
-      margin: 0;
-      @include grid-lg-down {
-        line-height: 35px;
       }
     }
   }
