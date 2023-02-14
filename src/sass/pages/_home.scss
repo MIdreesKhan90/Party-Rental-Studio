@@ -7,14 +7,14 @@
       font-size: 32px !important;
       font-weight: 300px !important;
       letter-spacing: 8px !important;
-      font-family: "Inter", sans-serif !important;
+      font-family: $font-family-header;
       margin: 10px 0 !important;
       @include grid-lg-down {
         font-size: 27px !important;
       }
     }
     h1 {
-      font-family: "Inter", sans-serif !important;
+      font-family: $font-family-header;
       margin-top: 10px;
       margin-bottom: 20px;
       text-transform: capitalize;
@@ -42,7 +42,7 @@
         background-color: white;
         border: none;
         padding: 2px 19px;
-        font-family: "Inter", sans-serif !important;
+        font-family: $font-family-header;
         @include grid-lg-down {
           width: 100%;
           padding: 2px 0px;
@@ -67,7 +67,7 @@
       li {
         position: relative;
         padding-left: 22px;
-        font-family: "Inter", sans-serif !important;
+        font-family: $font-family-header;
         font-size: 14px;
         font-weight: 400;
         @include grid-lg-down {
@@ -95,7 +95,7 @@
       padding: 15px 23px;
       font-size: 14px;
       font-weight: 400;
-      font-family: "Inter", sans-serif !important;
+      font-family: $font-family-header;
       span {
         display: inline-block;
         margin-right: 7px;
@@ -118,7 +118,7 @@
     h2 {
       text-align: left;
       margin: 0;
-      font-family: "Merriweather", serif;
+      font-family: $font-family-header;
       text-transform: capitalize;
       @include grid-lg-down {
         margin-bottom: 20px;
@@ -129,7 +129,7 @@
       max-width: 725px;
       font-weight: 300;
       padding-right: 30px;
-      font-family: "Inter", sans-serif !important;
+      font-family: $font-family-body;
       @include grid-lg-down {
         margin: 0;
       }
@@ -145,7 +145,7 @@
       text-align: left;
     }
     h3 {
-      font-family: "Merriweather", serif;
+      font-family: $font-family-header;
       font-weight: 300;
       line-height: 48px;
       margin: 0;
@@ -179,13 +179,12 @@
           text-transform: uppercase;
           font-size: 16px;
           font-weight: 500;
-          font-family: "Inter", sans-serif !important;
+          font-family: $font-family-body;
         }
         h2 {
           margin: 0;
-          font-family: "Merriweather", serif;
+          font-family: $font-family-header;
           text-align: left;
-          text-transform: lowercase;
           @include grid-lg-down {
             font-size: 20px !important;
           }
@@ -193,7 +192,7 @@
       }
       p {
         font-size: 18px;
-        font-family: "Inter", sans-serif !important;
+        font-family: $font-family-body;
         padding-right: 72px;
         line-height: 25px;
         margin: 15px 0;
@@ -220,7 +219,7 @@
     margin-bottom: 15px;
   }
   h4{
-    font-family: "Merriweather", serif;
+    font-family: $font-family-header;
   }
   .about-customer {
     display: flex;
@@ -234,18 +233,18 @@
         margin: 0;
         font-weight: 500;
         font-size: 18px;
-        font-family: "Inter", sans-serif !important;
+        font-family: $font-family-header;
       }
     }
     .c-moments {
       margin: 0;
       margin-right: 10px;
       font-size: 18px;
-      font-family: "Inter", sans-serif !important;
+      font-family: $font-family-header;
     }
     .c-ga {
       font-size: 18px;
-      font-family: "Inter", sans-serif !important;
+      font-family: $font-family-header;
     }
   }
   .issue-date {
@@ -254,7 +253,7 @@
       margin-top: 10px;
       font-size: 16px;
       font-weight: 300;
-      font-family: "Inter", sans-serif !important;
+      font-family: $font-family-header;
     }
   }
 }
@@ -285,7 +284,7 @@
         }
         h3 {
           font-weight: 400;
-          font-family: "Merriweather", serif;
+          font-family: $font-family-header;
           margin: 0;
           margin-bottom: 10px;
         }
@@ -312,19 +311,19 @@
       li {
         h3 {
           margin: 17px 0 12px 0;
-          font-family: "Merriweather", serif;
+          font-family: $font-family-header;
         }
         .review-details {
           h6 {
             margin: 20px 0 10px;
             font-size: 18px;
             font-weight: 500;
-            font-family: "Inter", sans-serif !important;
+            font-family: $font-family-header;
           }
           p {
             font-size: 16px;
             font-weight: 300;
-            font-family: "Inter", sans-serif !important;
+            font-family: $font-family-header;
             margin: 0;
             + p {
               margin-top: 16px;
@@ -383,7 +382,7 @@
         font-size: 13px;
         font-weight: 500;
         color: #028871;
-        font-family: "Inter", sans-serif !important;
+        font-family: $font-family-header;
         text-transform: uppercase;
         margin-bottom: 10px;
       }
@@ -391,7 +390,7 @@
         font-size: 24px;
         color: #1a4954;
         font-weight: 400;
-        font-family: "Merriweather", serif;
+        font-family: $font-family-header;
         margin: 0;
       }
     }
