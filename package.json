@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:sass": "sass --watch src/sass:public/css",
     "watch:eleventy": "eleventy --serve",
-    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "build:sass": "sass src/sass:public/css",
     "build:eleventy": "eleventy",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",

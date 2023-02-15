@@ -90,7 +90,7 @@ jQuery(function ($) {
     btn.text('Submitting..');
     $.ajax({
       type: "post",
-      url: "http://127.0.0.1:8000/api/weblead/store",
+      url: "https://phplaravel-795550-2996798.cloudwaysapps.com/api/weblead/store",
       data: data,
       dataType: "JSON",
       success: function (res) {
