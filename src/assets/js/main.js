@@ -1,5 +1,5 @@
 jQuery(function ($) {
-  $('.js-phone_us').mask('000-000-0000');
+  $(".js-phone_us").mask("000-000-0000");
 
   /*--------------------------------------
      Mobile Menu
@@ -83,22 +83,36 @@ jQuery(function ($) {
 
      */
 
+  function errorAlert(target, msg) {
+    $(target).after('<p class="error">' + msg + "</p>");
+    setTimeout(function () {
+      $(target).next(".error").remove();
+    }, 3000);
+  }
+
+  // url: "https://phplaravel-795550-2996798.cloudwaysapps.com/api/weblead/store",
   $(".contact-form").on("submit", function (e) {
     e.preventDefault();
     var data = $(this).serialize();
-    var btn = $('#formSubmitBtn');
-    btn.text('Submitting..');
+    var btn = $("#formSubmitBtn");
+    btn.text("Submitting..");
     $.ajax({
       type: "post",
       url: "https://phplaravel-795550-2996798.cloudwaysapps.com/api/weblead/store",
       data: data,
       dataType: "JSON",
       success: function (res) {
-        btn.text('Submit');
+        btn.text("Submit");
+        if (res.code && res.code == 202) {
+          errorAlert("#formSubmitBtn", res.message[0]);
+        }
+        if (res.success && res.success == true) {
+          window.location.href = "/confirmation";
+        }
       },
       error: function (xhr, status, error) {
         console.log(xhr, status, error);
-        btn.text('Submit');
+        btn.text("Submit");
       },
     });
   });
