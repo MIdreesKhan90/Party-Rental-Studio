@@ -116,4 +116,41 @@ jQuery(function ($) {
       },
     });
   });
+
+  function getReferralData(id) {
+    $.ajax({
+      type: "get",
+      url: "https://app.kreetiv.com/api/prs/referred_customers/" + id,
+      dataType: "JSON",
+      success: function (res) {
+        console.log(res);
+        if(res.data.status == "success"){
+          $('input[name="referral_id"]').val(res.data.cust_id);
+          $('input[name="source"]').val("referral");
+          $('.freetrial').prepend(`<h3 id="referredBy">Referred By ${res.data.first_name} ${res.data.last_name}</h3>`)
+        }else{
+          $('input[name="referral_id"]').val(0);
+          $('input[name="source"]').val("website");
+          $('.freetrial').find('#referredBy').remove();
+        }
+      },
+      error: function (xhr, status, error) {
+        console.log(xhr, status, error);
+      },
+    });
+  }
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+
+  const code = urlParams.get("code");
+  const referringPage = window.location.href;
+  $('input[name="referring_page"]').val(referringPage);
+
+  if(code){
+    getReferralData(code);
+  }else{
+    $('input[name="referral_id"]').val(0);
+    $('input[name="source"]').val("website");
+    $('.freetrial').find('#referredBy').remove();
+  }
 });
