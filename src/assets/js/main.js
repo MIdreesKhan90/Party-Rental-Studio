@@ -124,10 +124,10 @@ jQuery(function ($) {
       dataType: "JSON",
       success: function (res) {
         console.log(res);
-        if(res.data.status == "success"){
-          $('input[name="referral_id"]').val(res.data.cust_id);
+        if(res.status == "success"){
+          $('input[name="referral_id"]').val(res.cust_id);
           $('input[name="source"]').val("referral");
-          $('.freetrial').prepend(`<h3 id="referredBy">Referred By ${res.data.first_name} ${res.data.last_name}</h3>`)
+          $('.freetrial').prepend(`<h3 id="referredBy">Referred By ${res.first_name} ${res.last_name}</h3>`)
         }else{
           $('input[name="referral_id"]').val(0);
           $('input[name="source"]').val("website");
