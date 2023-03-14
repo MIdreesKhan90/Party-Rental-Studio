@@ -1213,6 +1213,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/public\/confirmation\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/confirmation\/index.html",
+      "oF" : 0
+    },
     "\/public\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1224,6 +1232,14 @@
       "oAP" : "\/public\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/public\/css\/styles.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/css\/styles.css.map",
+      "oF" : 0
     },
     "\/public\/customer-testimonials\/index.html" : {
       "cB" : 0,
@@ -3008,6 +3024,14 @@
       "oAP" : "\/src\/pages\/articles.njk",
       "oF" : 0
     },
+    "\/src\/pages\/confirmation.njk" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/pages\/confirmation.njk",
+      "oF" : 0
+    },
     "\/src\/pages\/customer-testimonials.njk" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3239,21 +3263,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/src\/sass\/components\/_variables.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/sass\/components\/_wordpress-core.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/src\/sass\/components\/_wordpress-core.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
