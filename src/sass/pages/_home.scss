@@ -112,8 +112,8 @@
 // events
 .section-events {
   .events-head {
-    display: flex;
-    justify-content: space-between;
+    //display: flex;
+    //justify-content: space-between;
     border-bottom: 1px solid #f4eee6;
     padding-bottom: 67px;
     @include grid-lg-down {
@@ -130,10 +130,9 @@
       }
     }
     p {
-      margin: 0 0 0 84px;
-      max-width: 725px;
-      font-weight: 300;
-      padding-right: 30px;
+      //margin: 0 0 0 84px;
+      //max-width: 725px;
+      font-weight: 400;
       font-family: $font-family-body;
       @include grid-lg-down {
         margin: 0;
@@ -143,7 +142,7 @@
 }
 
 // reports
-.section-reports {
+.section-content {
   .flex-row {
     > div{
       &:first-child{
@@ -171,21 +170,32 @@
           margin: 0;
           font-family: $font-family-header;
           text-align: left;
+          color: #000;
           @include grid-lg-down {
             font-size: 20px !important;
           }
         }
       }
       p {
-        font-size: 18px;
+        font-size: 16px;
         font-family: $font-family-body;
-        padding-right: 72px;
-        line-height: 25px;
+        //padding-right: 72px;
+        line-height: 1.4;
+        font-weight: 400;
+        //color: #000;
         margin: 15px 0;
         @include grid-lg-down {
           padding: 0;
         }
       }
+
+      a {
+        font-family: $font-family-header;
+        font-weight: 500;
+        color: #000;
+        letter-spacing: -0.04rem;
+      }
+
     }
     .row-img {
       width: 50%;
@@ -284,6 +294,10 @@
 }
 // section-reviews
 .section-reviews {
+  border-bottom: 1px solid #f4eee6;
+  padding-bottom: 90px;
+  background-color: #F4EEE6;
+
   .review {
     width: 33.33%;
     @include grid-lg-down {
@@ -297,44 +311,28 @@
       li {
         h3 {
           margin: 17px 0 12px 0;
-          font-family: $font-family-header;
+          font-family: $font-family-cursive;
+          letter-spacing: -0.05rem;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 1;
         }
         .review-details {
           h6 {
-            margin: 20px 0 10px;
+            margin: 28px 0 0;
             font-size: 18px;
             font-weight: 500;
             font-family: $font-family-header;
+            letter-spacing: 0;
           }
           p {
             font-size: 16px;
             font-weight: 300;
-            font-family: $font-family-header;
+            //font-family: $font-family-header;
             margin: 0;
-            + p {
-              margin-top: 16px;
-            }
           }
         }
       }
-    }
-  }
-  .review-links {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 67px;
-    button {
-      @include grid-lg-down {
-        font-size: 12px;
-      }
-
-      + button {
-        margin-left: 10px;
-      }
-    }
-    @include grid-lg-down {
-      margin-top: 20px;
     }
   }
 }

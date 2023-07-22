@@ -891,6 +891,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/public\/assets\/images\/home-snippets-settings.png" : {
+      "ft" : 32768,
+      "iS" : 26725,
+      "oA" : 0,
+      "oAP" : "\/public\/assets\/images\/home-snippets-settings.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/public\/assets\/images\/mobile-screens.png" : {
       "ft" : 32768,
       "iS" : 223290,
@@ -1220,6 +1233,18 @@
       "oA" : 0,
       "oAP" : "\/public\/confirmation\/index.html",
       "oF" : 0
+    },
+    "\/public\/css\/styles-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/css\/styles-min-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/public\/css\/styles.css" : {
       "aP" : 1,
@@ -2686,6 +2711,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/src\/assets\/images\/home-snippets-settings.png" : {
+      "ft" : 32768,
+      "iS" : 84168,
+      "oA" : 0,
+      "oAP" : "\/src\/assets\/images\/home-snippets-settings.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/src\/assets\/images\/mobile-screens.png" : {
       "ft" : 32768,
       "iS" : 223290,
@@ -3297,6 +3335,18 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/src\/sass\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/sass\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/src\/sass\/styles.scss" : {
       "aP" : 0,

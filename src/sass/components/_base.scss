@@ -98,7 +98,7 @@ body{
     font-size: 18px;
 }
 .section{
-    padding: 90px 0;
+    padding: 90px 0 0;
     @include grid-lg-down {
         padding: 40px 0;
          }
@@ -197,7 +197,6 @@ body{
  .section-title {
     margin-bottom: 50px;
     > h6 {
-      font-family: "Inter", sans-serif !important;
       font-weight: 500;
       text-align: center;
       margin-bottom: 16px;
@@ -205,7 +204,6 @@ body{
     > h2 {
       margin: 0;
       margin-bottom: 16px;
-      font-family: "Merriweather", serif;
       text-transform: capitalize;
     }
     > p {
@@ -215,6 +213,5 @@ body{
       text-align: center;
       max-width: 865px;
       margin: 0 auto;
-      font-family: "Inter", sans-serif !important;
     }
   }
