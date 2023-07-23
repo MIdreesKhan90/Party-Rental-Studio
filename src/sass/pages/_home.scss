@@ -150,7 +150,7 @@
       }
     }
     .row-content {
-      width: 50%;
+      width: 40%;
       padding-top: 40px;
       @include grid-lg-down {
         width: 100%;
@@ -168,12 +168,10 @@
         }
         h2 {
           margin: 0;
-          font-family: $font-family-header;
-          text-align: left;
           color: #000;
-          @include grid-lg-down {
-            font-size: 20px !important;
-          }
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 1.1;
         }
       }
       p {
@@ -189,16 +187,22 @@
         }
       }
 
+
+
       a {
         font-family: $font-family-header;
         font-weight: 500;
         color: #000;
         letter-spacing: -0.04rem;
+        .material-symbols-outlined {
+          vertical-align: -5px;
+          font-size: 20px;
+        }
       }
 
     }
     .row-img {
-      width: 50%;
+      width: 60%;
       @include grid-lg-down {
         width: 100%;
       }
@@ -316,20 +320,22 @@
           font-weight: 500;
           font-size: 30px;
           line-height: 1;
+          color: $font-copy-color;
         }
         .review-details {
           h6 {
             margin: 28px 0 0;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
             font-family: $font-family-header;
-            letter-spacing: 0;
+            letter-spacing: -0.3px;
+            line-height: 1.2;
           }
           p {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
-            //font-family: $font-family-header;
             margin: 0;
+            line-height: 1.2;
           }
         }
       }

@@ -12,16 +12,19 @@ $font-family-cursive: 'Playfair Display', serif;
 $font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
 
+$font-copy-color: #3d444b;
+
 /////////////////////////////////////////////////////////////////////////////
 // BODY
 /////////////////////////////////////////////////////////////////////////////
 
-html * {
-	color: #3d444b;
+div, td, p, li, a, span {
+	color: $font-copy-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-family-header;
 	font-weight: 600;
 	letter-spacing: -0.1rem;
+	color: #000;
 }

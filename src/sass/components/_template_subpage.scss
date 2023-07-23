@@ -249,16 +249,16 @@
 	 	padding: 0;
 	 	padding: 24px;
 	 	background: #ffffff;
-	 	background: -moz-linear-gradient(top, #F7F7F7 0%, #ffffff 100%);
-	 	background: -webkit-linear-gradient(top, #F7F7F7 0%,#ffffff 100%);
-	 	background: linear-gradient(to bottom, #F7F7F7 0%,#ffffff 100%);
+	 	background: -moz-linear-gradient(top, #FDFDFD 0%, #fff 100%);
+	 	background: -webkit-linear-gradient(top, #FDFDFD 0%,#fff 100%);
+	 	background: linear-gradient(to bottom, #FDFDFD 0%,#fff 100%);
 
 	 	@include grid-md {
-	 		box-shadow: -25px 0 60px -45px rgba(0,0,0,.5), -1px 0 0 rgba(0,0,0,.1);
+	 		box-shadow: -6px 0 60px -45px rgba(0,0,0,.5), -1px 0 0 rgba(0,0,0,0.01);
 			background: #ffffff;
-			background: -moz-linear-gradient(top, #FCFCFC 0%, #ffffff 100%);
-			background: -webkit-linear-gradient(top, #FCFCFC 0%,#ffffff 100%);
-			background: linear-gradient(to bottom, #FCFCFC 0%,#ffffff 100%);
+			background: -moz-linear-gradient(top, #fff 0%, rgba(255,255,255,0%) 100%);
+			background: -webkit-linear-gradient(top, #fff 0%,rgba(255,255,255,0%) 100%);
+			background: linear-gradient(to bottom, #fff 0%,rgba(255,255,255,0%) 100%);
 
 
 	 	}

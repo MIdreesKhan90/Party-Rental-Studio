@@ -20,7 +20,7 @@ Includes the following custom build from Zurb Foundation 6.2.3:
 
 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
-html * {
+div, td, p, li, a, span {
   color: #3d444b;
 }
 
@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   letter-spacing: -0.1rem;
+  color: #000;
 }
 
 /*
@@ -1759,11 +1760,6 @@ h2 {
   font-size: 36px;
   text-align: center;
 }
-@media only screen and (max-width:768px) {
-  h2 {
-    font-size: 20px !important;
-  }
-}
 
 h2.text-sm {
   font-size: 32px;
@@ -2145,7 +2141,7 @@ body {
   padding-right: 70px;
 }
 .section-content .flex-row .row-content {
-  width: 50%;
+  width: 40%;
   padding-top: 40px;
 }
 @media only screen and (max-width:768px) {
@@ -2170,11 +2166,8 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: left;
   color: #000;
-}
-@media only screen and (max-width:768px) {
-  .section-content .flex-row .row-content .title h2 {
-    font-size: 20px !important;
-  }
+  font-size: 28px;
+  font-weight: 500;
 }
 .section-content .flex-row .row-content p {
   font-size: 16px;
@@ -2195,7 +2188,7 @@ body {
   letter-spacing: -0.04rem;
 }
 .section-content .flex-row .row-img {
-  width: 50%;
+  width: 60%;
 }
 @media only screen and (max-width:768px) {
   .section-content .flex-row .row-img {
@@ -2319,6 +2312,7 @@ body {
   font-weight: 500;
   font-size: 30px;
   line-height: 1;
+  color: #3d444b;
 }
 .section-reviews .review ul li .review-details h6 {
   margin: 28px 0 0;

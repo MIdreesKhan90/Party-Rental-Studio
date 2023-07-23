@@ -28,61 +28,6 @@ body{
            display: block;
             }
     }
-}
-    h1{
-        font-size: 50px;
-        @include grid-lg-down {
-          font-size: 29px;
-             }
-    }
-     h2{
-        font-size: 36px;
-        text-align: center;
-        @include grid-lg-down {
-            font-size: 20px !important;
-               }
-    }
-     h2.text-sm{
-        font-size: 32px;
-        font-weight: 300;
-        @include grid-lg-down {
-            font-size: 18px;
-               }
-    }
-     h3{
-        font-size: 26px;
-        @include grid-lg-down {
-          font-size: 20px;
-                          }
-    }
-     h3.text-sm{
-        font-size: 28px;
-        @include grid-lg-down {
-            font-size: 24px;
-               }
-    }
-     h4{
-        font-size: 24px;
-        @include grid-lg-down {
-            font-size: 20px;
-               }
-    }
-     h5{
-        font-size: 18px;
-        @include grid-lg-down {
-            font-size: 16px;
-
-    }
-}
-     h5.text-sm{
-        font-size: 16px;
-        @include grid-lg-down {
-            font-size: 14px;
-               }
-    }
-     h6{
-        font-size: 14px;
-    }
      .text-small{
         font-size: 14px;
     }
@@ -94,8 +39,9 @@ body{
         font-size: 16px;
         text-transform: uppercase;
     }
-     p{
-    font-size: 18px;
+    p {
+        font-size: 18px;
+    }
 }
 .section{
     padding: 90px 0 0;
@@ -140,7 +86,7 @@ body{
     color: #3d444b m !important;
 }
 .mb-90{
-    margin-bottom: 90px;
+    margin-bottom: 120px;
     @include grid-lg-down {
         margin-bottom: 40px ;
          }
@@ -177,9 +123,7 @@ body{
         padding: 0;
                   }
 }
-body{
-    color: #1A4954 !important;
-}
+
 .md-reverse{
     @include grid-lg-down {
         flex-direction: column-reverse;
