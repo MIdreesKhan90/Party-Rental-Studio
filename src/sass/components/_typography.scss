@@ -18,9 +18,9 @@ $font-copy-color: #3d444b;
 // BODY
 /////////////////////////////////////////////////////////////////////////////
 
-div, td, p, li, a, span {
-	color: $font-copy-color;
-}
+div, td, p, li, a, span {color: $font-copy-color;}
+
+p {line-height: 1.4;}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-family-header;

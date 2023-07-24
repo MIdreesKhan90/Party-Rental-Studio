@@ -1,6 +1,7 @@
 .section-hero {
   padding-top: 75px;
-  background-color: #f4eee6;
+  //background-color: #f4eee6;
+  background: linear-gradient(to top, $body-bg 0%, $body-bg 50%, #ffffff 100%);
   .hero-content {
     text-align: center;
     h2 {
@@ -141,14 +142,23 @@
   }
 }
 
+.prs-highlights {
+  background: linear-gradient(160deg, $body-bg 0%, #ffffff 20%, #ffffff 100%);
+}
+
 // reports
 .section-content {
   .flex-row {
+    
     > div{
       &:first-child{
         padding-right: 70px;
+        @include grid-lg-down {
+          padding-right: 0px;
+        }
       }
     }
+    
     .row-content {
       width: 40%;
       padding-top: 40px;
@@ -157,15 +167,7 @@
         padding-top: 0;
       }
       .title {
-        padding-right: 20px;
-        .sub-title {
-          margin: 0;
-          margin-bottom: 16px;
-          text-transform: uppercase;
-          font-size: 16px;
-          font-weight: 500;
-          font-family: $font-family-body;
-        }
+        margin-bottom: 18px;
         h2 {
           margin: 0;
           color: #000;
@@ -174,20 +176,6 @@
           line-height: 1.1;
         }
       }
-      p {
-        font-size: 16px;
-        font-family: $font-family-body;
-        //padding-right: 72px;
-        line-height: 1.4;
-        font-weight: 400;
-        //color: #000;
-        margin: 15px 0;
-        @include grid-lg-down {
-          padding: 0;
-        }
-      }
-
-
 
       a {
         font-family: $font-family-header;
@@ -298,9 +286,7 @@
 }
 // section-reviews
 .section-reviews {
-  border-bottom: 1px solid #f4eee6;
   padding-bottom: 90px;
-  background-color: #F4EEE6;
 
   .review {
     width: 33.33%;
