@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    color: #1A4954 !important;
+}
+body{
+    font-size: 18px;
+    font-weight: 300;
+    color: #1A4954;
+    font-family: $font-family-body;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+    @media (width <= 75rem) {
+        .container {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    &.md-block{
+        @include grid-lg-down {
+           display: block;
+            }
+    }
+}
+.section{
+    padding: 90px 0;
+    @include grid-lg-down {
+        padding: 40px 0;
+         }
+}
+.btn-green{
+    padding: 17px 19px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    background-color: #028871;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif !important;
+    border-radius: 3px;
+    cursor: pointer
+}
+.btn-green-outline{
+    padding: 17px 19px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #028871;
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif !important;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.row-img{
+    .img-fluid{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.text-right{
+    text-align: right;
+}
+.text-dark{
+    color: #3d444b m !important;
+}
+.mb-90{
+    margin-bottom: 90px;
+    @include grid-lg-down {
+        margin-bottom: 40px ;
+         }
+}
+.bg-light{
+    background-color: #f4eee6;
+}
+.bg-white{
+    background-color: white;
+}
+.mt-5{
+    margin-top: 46px;
+}
+.mt-40{
+    margin-top: 40px;
+    @include grid-lg-down {
+        margin-top: 20px ;
+         }
+}
+.links{
+    font-weight: 500;
+    font-size: 18px;
+    color: #028871
+    ;
+}
+.text-center{
+    text-align: center;
+}
+.col-md-4{
+    width: 33.33%;
+    padding:0 24px;
+    @include grid-lg-down {
+        width: 100%;
+        padding: 0;
+                  }
+}
+
+.md-reverse{
+    @include grid-lg-down {
+        flex-direction: column-reverse;
+                  }
+}
+.col-6{
+    width: 50%;
+    @include grid-lg-down {
+       width: 100%;
+                  }
+}
+.w-100{
+    width: 100%;
+}
+ .section-title {
+    margin-bottom: 50px;
+    @include grid-lg-down {
+        margin-bottom: 24px;
+    }
+    > h6 {
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    > h2 {
+      margin: 8px 0 16px;
+      text-transform: capitalize;
+      @include grid-lg-down {
+        font-size: 28px;
+      }
+    }
+  }
+
+
+  .only-mobile{
+    display: none;
+
+    @include grid-lg-down{
+        display: block;
+    }
+  }

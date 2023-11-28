@@ -147,7 +147,11 @@ header.front-page:after {
 }
 
 #sub-section {
-  background-color: #f4f4f4;
+  background-color: #fafafa;
+
+  &.light {
+    background: linear-gradient(160deg, rgba(244, 238, 230,0.5), #ffffff 20%, #ffffff 100%);
+  }
 
   .sub-section-wrapper {
     position: relative;
@@ -192,7 +196,22 @@ Right Column (Multi Column Articles)
   #sub-section {
     aside {
 
-      ul {margin-bottom: 48px;}
+      ul {
+        margin: 0;
+        li {
+          list-style: none;
+          line-height: 1.2rem;
+          margin-bottom: 1.4rem;
+          border-bottom: 1px solid #efefef;
+          padding-bottom: 1.4rem;
+          &:last-child {
+            border-bottom: none;
+          }
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
 
       h2.widget-title {
         font-size: 1.4rem;
@@ -200,47 +219,76 @@ Right Column (Multi Column Articles)
         margin-bottom: 1.4rem;
         //background-color: #fff;
         color: #444;
+        font-weight: 500;
         //padding: 4px 8px;
       }
     }
   }
 
 /*--------------------------------------
+Section > Form
+--------------------------------------*/
+
+.section-form {
+  padding: 90px 0;
+  @include grid-lg-down {
+    h2 {
+      font-size: 24px;
+    }     
+  }
+}
+
+/*--------------------------------------
 Footer
 --------------------------------------*/
 
 footer {
-  background-color: #f4f4f4;
+  background-color: #fff;
   //background-color: $secondary-color;
-  padding: 28px 0 22px;
+  padding: 90px 0;
+
+  p,li, a {
+    font-size: 1.0rem;
+  }
 
   .prslogo {
     text-align: center;
     img {
-      max-width: 240px;
+      //max-width: 240px;
     }
     @include grid-lg {
       text-align: left;
     }
   }
-  .copyright {
-    padding-top: 16px;
-    text-align: center;
-    @include grid-lg {
-      text-align: right;
+
+  h4 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+    line-height: 1.0;
+    margin-top: 24px;
+    &.site-map {
+      margin-top: 0px;
+      @include grid-lg-down {
+         margin-top: 24px;
+      }      
     }
   }
+
+  .copyright {}
 
   ul.footer-menu {
     list-style: none;
     padding-top: 10px;
-    text-align: center;
+    margin: 0;
     li {
-      display: inline-block;
-      margin-left: 14px;
       a {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         color: #3b9768;
+        img {
+          height: 1rem;
+          margin-left: 2px;
+        }
       }
     }
   }

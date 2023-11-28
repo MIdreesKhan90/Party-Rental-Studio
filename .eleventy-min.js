@@ -1,0 +1,1 @@
+module.exports=function(s){return s.addPassthroughCopy("./src/assets"),s.addWatchTarget("./src/sass/"),s.addPassthroughCopy({favicon:"/"}),{passthroughFileCopy:!0,markdownTemplateEngin:"njk",templateFormts:["html","njk","md"],dir:{input:"src",output:"public"}}};

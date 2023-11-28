@@ -1,71 +1,62 @@
 ---
-title: Helpful Articles
-description: Browse our collection of helpful articles and case studies to help you run your party rental business more efficiently and win more customers using online marketing, social media, and the technology our solution provides.
+title: Our Helpful Articles | Party Rental Management Software
+description: Explore our collection of articles to streamline your party rental business using our technology, online marketing & social media, and attract more customers.
+pagination:
+    data: collections.sortedPosts
+    size: 12
+    alias: posts
+permalink: "articles/{{ pagination.pageNumber + 1 }}/index.html"
 ---
 <header role="banner">
     <div class="row headline">
-        <h1>{{ title }}</h1>
-        <p>{{ description }}</p>
+        <h1 style="font-size: 2.2rem;">Boost Your Rental Business with Our Informative Articles</h1>
+        <p>Explore our collection of helpful articles to streamline your party rental business using our party rental software</p>
     </div>
 </header>
 <section id="sub-section">
     <div class="row">
-        <div class="small-24 large-16 drop-column-margin columns">
+        <div class="small-24 large-18 drop-column-margin columns">
             <div class="articles">
-                {%- for post in collections.post -%}
-                <a class="article-post" href="{{ post.url }}" title="{{ post.data.title }}">
-                    <div>
-                        <h3>{{ post.data.title }}</h3>
-                        <p class="article-info">{{ post.data.category }}<span> | </span> By {{ post.data.author }}</p>
-                        <p>{{ post.data.description }}</p>
-                    </div>
-                </a>
+                {%- for post in posts -%}
+                    <a class="article-post" href="{{ post.url }}" title="{{ post.data.title }}">
+                        <div>
+                            <h3>{{ post.data.title }}</h3>
+                            <p class="article-info">{{ post.data.category }}
+                                <span> | </span> {{ post.data.date | formatDate('MM/dd/yyyy') }}</p>
+                            <p>{{ post.data.description }}</p>
+                        </div>
+                    </a>
                 {%- endfor -%}
             </div>
-            <div class="row">
-                <div class="small-12 columns prev-posts-link"></div>
-                <div class="small-12 columns next-posts-link text-right"><a href="#">Older Entries</a></div>
-            </div>
+            <nav aria-label="Pagination">
+              <ul class="pagination">
+              <li class="pagination-previous {% if pagination.href.previous == null %}disabled{% endif %}">{% if pagination.href.previous == null %}Previous{% else %}<a href="{{ pagination.href.previous }}" aria-label="Previous">Previous</a>{% endif %}</li>
+                {%- for pageEntry in pagination.pages %}
+                  <li {% if page.url == pagination.hrefs[ loop.index0 ] %}class="current"{% endif %}>{% if page.url == pagination.hrefs[ loop.index0 ] %}{{ loop.index }}{% else %}<a href="{{ pagination.hrefs[ loop.index0 ] }}">{{ loop.index }}</a>{% endif %}</li>
+                {%- endfor %}
+               <li class="pagination-next {% if pagination.href.next == null %}disabled{% endif %}">{% if pagination.href.next == null %}Next{% else %} <a href="{{ pagination.href.next }}" aria-label="Next">Next</a> {% endif %}</li>
+              </ul>
+            </nav>
         </div>
-        <div class="small-24 large-7 large-offset-1 columns">
+        <div class="small-24 large-6 columns">
             <aside id="secondary" class="widget-area" role="complementary">
-                <section id="recent-posts-2" class="widget widget_recent_entries"><h2 class="widget-title">
-                    Recent Posts</h2>
+                <section id="recent-posts">
+                    <h2 class="widget-title">Popular Articles</h2>
                     <ul>
                         <li>
-                            <a href="#">Why do you need an online rental booking software?</a>
+                            <a href="/why-do-you-need-an-online-rental-booking-software/">Why do you need an online rental booking software?</a>
                         </li>
                         <li>
-                            <a href="#">Efficient Inventory Management Is Key To Your Success!</a>
+                            <a href="/efficient-inventory-management-is-key-to-your-success/">Efficient Inventory Management Is Key To Your Success!</a>
                         </li>
                         <li>
-                            <a href="#">Flourish by Leaps and Bounds in Your Party Rental Business with Our New Technology</a>
+                            <a href="/flourish-by-leaps-and-bounds-in-your-party-rental-business-with-our-new-technology/">Flourish by Leaps and Bounds in Your Party Rental Business with Our New Technology</a>
                         </li>
                         <li>
-                            <a href="#">10 Inexpensive Ways to Promote Your Party Rental Website</a>
+                            <a href="/10-inexpensive-ways-to-promote-your-party-rental-website/">10 Inexpensive Ways to Promote Your Party Rental Website</a>
                         </li>
                         <li>
-                            <a href="#">How To Promote Your Rental Products Online</a>
-                        </li>
-                    </ul>
-                </section>
-                <section id="categories-2" class="widget widget_categories">
-                    <h2 class="widget-title">Categories</h2>
-                    <ul>
-                        <li class="cat-item cat-item-4">
-                            <a href="#">Case Study</a> (1)
-                        </li>
-                        <li class="cat-item cat-item-5">
-                            <a href="#">Customer Relationship</a> (5)
-                        </li>
-                        <li class="cat-item cat-item-6">
-                            <a href="#">PartyRental Software</a> (7)
-                        </li>
-                        <li class="cat-item cat-item-2">
-                            <a href="#">Search Engine Optimization</a> (2)
-                        </li>
-                        <li class="cat-item cat-item-3">
-                            <a href="#">Social Media &amp; Marketing</a> (5)
+                            <a href="/featuring-products-online/">How To Promote Your Rental Products Online</a>
                         </li>
                     </ul>
                 </section>

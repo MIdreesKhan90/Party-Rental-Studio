@@ -1,156 +1,216 @@
-jQuery(function ($) {
-  $(".js-phone_us").mask("000-000-0000");
+document.addEventListener("DOMContentLoaded", function () {
+    /*--------------------------------------
+         Mobile Menu
+         --------------------------------------*/
 
-  /*--------------------------------------
-     Mobile Menu
-     --------------------------------------*/
+    let parentElementToMenu = document.body;
+    let mobileMenuTriggerClass = document.querySelector(".toggle-nav");
+    let mobileActiveClass = "menu-active";
 
-  var $parentElementToMenu = $("body"),
-    $mobileMenuTriggerClass = $(".toggle-nav"),
-    $mobileActiveClass = "menu-active";
+    mobileMenuTriggerClass.addEventListener("click", function (e) {
+        this.classList.toggle("active");
+        parentElementToMenu.classList.toggle(mobileActiveClass);
 
-  $mobileMenuTriggerClass.click(function (e) {
-    $(this).toggleClass("active");
-    $parentElementToMenu.toggleClass($mobileActiveClass);
-    $("html,body").toggleClass("noScroll");
+        // Toggle noScroll class for html and body
+        document.documentElement.classList.toggle("noScroll");
+        document.body.classList.toggle("noScroll");
 
-    //window.setTimeout(function(){
-    //
-    //}, 1000);
+        /*
+               if (document.body.classList.contains(mobileActiveClass)) {
+                   document.body.style.overflowY = 'hidden';
+                   document.body.style.position = 'fixed';
+               } else {
+                   document.body.style.overflowY = 'auto';
+                   document.body.style.position = 'relative';
+               }
+               */
 
-    /*
-         if ($('body').hasClass($mobileActiveClass)) {
-         $('body').css({'overflow-y': 'hidden', 'position': 'fixed'});
-         //$('#nav nav').css({'overflow-y': 'auto',  '-webkit-overflow-scrolling': 'touch'});
-         } else {
-         $('body').css({'overflow-y': 'auto', 'position': 'relative'});
-         }*/
+        e.preventDefault();
+    });
 
-    return false;
-  });
+    //ESC key to remove mobile menu
+    document.addEventListener("keyup", function (e) {
+        if (e.keyCode == 27) {
+            parentElementToMenu.classList.toggle(mobileActiveClass);
+        }
+    });
 
-  //ESC key to remove mobile menu
-  $(document).keyup(function (e) {
-    if (e.keyCode == 27) {
-      $parentElementToMenu.toggleClass($mobileActiveClass);
+    /*--------------------------------------
+         Equal Height
+         --------------------------------------*/
+
+    function setEqualHeight(columns) {
+        let tallestcolumn = 0;
+        columns.forEach((column) => {
+            let currentHeight = column.offsetHeight;
+            if (currentHeight > tallestcolumn) {
+                tallestcolumn = currentHeight;
+            }
+        });
+        columns.forEach((column) => {
+            column.style.height = tallestcolumn + "px";
+        });
     }
-  });
 
-  /*--------------------------------------
-     Equal Height
-     --------------------------------------*/
+    // document.addEventListener("DOMContentLoaded", function () {
+    //setEqualHeight(document.querySelectorAll(".container > div"));
+    //setEqualHeight(document.querySelectorAll(".articlebox"));
+    // });
 
-  function setEqualHeight(columns) {
-    var tallestcolumn = 0;
-    columns.each(function () {
-      currentHeight = $(this).height();
-      if (currentHeight > tallestcolumn) {
-        tallestcolumn = currentHeight;
-      }
-    });
-    columns.height(tallestcolumn);
-  }
+    // Sticky Header
+    let shrinkHeader = 0.5 * window.innerHeight;
+    let lastScrollTop = 0;
+    let slideUpAnimationDuration = 300; // Duration of slide-up animation in milliseconds
 
-  $(document).ready(function () {
-    //setEqualHeight($(".container  > div"));
-    //setEqualHeight($(".articlebox"));
-  });
+    window.addEventListener("scroll", function () {
+        let currentScrollTop = window.pageYOffset;
 
-  /*--------------------------------------
-     Sticky Header
-     --------------------------------------*/
-
-  /*
-
-     var shrinkHeader = 75;
-
-     $(window).scroll(function () {
-
-     var scroll = getCurrentScroll();
-     if (scroll >= shrinkHeader) {
-     $('nav').addClass('sticky');
-     //$('.form-tabs').css('margin-top', '185px');
-     }
-     else {
-     $('nav').removeClass('sticky');
-     //$('.form-tabs').css('margin-top', '20px');
-     }
-     });
-
-     function getCurrentScroll() {
-     return window.pageYOffset || document.documentElement.scrollTop;
-     }
-
-     */
-
-  function errorAlert(target, msg) {
-    $(target).after('<p class="error">' + msg + "</p>");
-    setTimeout(function () {
-      $(target).next(".error").remove();
-    }, 3000);
-  }
-
-  // url: "https://phplaravel-795550-2996798.cloudwaysapps.com/api/weblead/store",
-  $(".contact-form").on("submit", function (e) {
-    e.preventDefault();
-    var data = $(this).serialize();
-    var btn = $("#formSubmitBtn");
-    btn.text("Submitting..");
-    $.ajax({
-      type: "post",
-      url: "https://phplaravel-795550-2996798.cloudwaysapps.com/api/weblead/store",
-      data: data,
-      dataType: "JSON",
-      success: function (res) {
-        btn.text("Submit");
-        if (res.code && res.code == 202) {
-          errorAlert("#formSubmitBtn", res.message[0]);
+        if (currentScrollTop > lastScrollTop) {
+            // Scrolling down
+            if (currentScrollTop >= shrinkHeader) {
+                document.querySelector("nav").classList.add("sticky");
+                document.querySelector("nav").classList.remove("animate-up");
+            }
+        } else {
+            // Scrolling up
+            if (currentScrollTop <= shrinkHeader) {
+                document.querySelector("nav").classList.add("animate-up");
+                // Delay the removal of the 'sticky' class until after the slide-up animation
+                setTimeout(function () {
+                    document.querySelector("nav").classList.remove("sticky");
+                    // if (document.querySelector("nav").classList.contains("animate-up")) {
+                    // }
+                }, slideUpAnimationDuration);
+            }
         }
-        if (res.success && res.success == true) {
-          window.location.href = "/confirmation";
+
+        // At the top of the page, remove animate-up class
+        if (currentScrollTop == 0) {
+            document.querySelector("nav").classList.remove("sticky");
+            document.querySelector("nav").classList.remove("animate-up");
         }
-      },
-      error: function (xhr, status, error) {
-        console.log(xhr, status, error);
-        btn.text("Submit");
-      },
-    });
-  });
 
-  function getReferralData(id) {
-    $.ajax({
-      type: "get",
-      url: "https://app.kreetiv.com/api/prs/referred_customers/" + id,
-      dataType: "JSON",
-      success: function (res) {
-        console.log(res);
-        if(res.status == "success"){
-          $('input[name="referral_id"]').val(res.cust_id);
-          $('input[name="source"]').val("referral");
-          $('.freetrial').prepend(`<h3 id="referredBy">Referred By ${res.first_name} ${res.last_name}</h3>`)
-        }else{
-          $('input[name="referral_id"]').val(0);
-          $('input[name="source"]').val("website");
-          $('.freetrial').find('#referredBy').remove();
+        lastScrollTop = currentScrollTop;
+    });
+
+    function getCurrentScroll() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    }
+
+    function errorAlert(target, msg) {
+        let targetElement = document.getElementById(target);
+        let errorElement = document.createElement("p");
+        errorElement.classList.add("error");
+        errorElement.textContent = msg;
+        targetElement.parentNode.insertBefore(errorElement, targetElement.nextSibling);
+        setTimeout(function () {
+            errorElement.remove();
+        }, 3000);
+    }
+
+    // url: "https://phplaravel-795550-2996798.cloudwaysapps.com/api/weblead/store",
+    document.querySelector(".contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        let formData = new FormData(this);
+        let btn = document.getElementById("formSubmitBtn");
+        btn.textContent = "Submitting..";
+
+        let dataObj = {};
+
+        for (let [key, value] of formData.entries()) {
+            dataObj[key] = value;
         }
-      },
-      error: function (xhr, status, error) {
-        console.log(xhr, status, error);
-      },
+
+        if (!dataObj["name"]) {
+            dataObj["name"] = `${dataObj["firstName"]} ${dataObj["lastName"]}`;
+            delete dataObj["firstName"];
+            delete dataObj["lastName"];
+        }
+
+        fetch("https://phplaravel-795550-2996798.cloudwaysapps.com/api/weblead/store", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataObj),
+        })
+            .then((response) => response.json())
+            .then((res) => {
+                btn.textContent = "Submit";
+                if (res.code && res.code == 202) {
+                    errorAlert("formSubmitBtn", res.message[0]);
+                }
+                if (res.success && res.success == true) {
+                    window.location.href = "/confirmation";
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+                btn.textContent = "Submit";
+            });
     });
-  }
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
 
-  const code = urlParams.get("code");
-  const referringPage = window.location.href;
-  $('input[name="referring_page"]').val(referringPage);
+    function getReferralData(id) {
+        fetch("https://app.kreetiv.com/api/prs/referred_customers/" + id)
+            .then((response) => response.json())
+            .then((res) => {
+                if (res.status == "success") {
+                    document.querySelector('input[name="referral_id"]').value = res.cust_id;
+                    document.querySelector('input[name="source"]').value = "referral";
+                    let referredByElement = document.createElement("h3");
+                    referredByElement.id = "referredBy";
+                    referredByElement.textContent = `Referred By ${res.first_name} ${res.last_name}`;
+                    document
+                        .querySelector(".freetrial")
+                        .insertBefore(referredByElement, document.querySelector(".freetrial").firstChild);
+                } else {
+                    document.querySelector('input[name="referral_id"]').value = 0;
+                    document.querySelector('input[name="source"]').value = "website";
+                    let referredByElement = document.getElementById("referredBy");
+                    if (referredByElement) {
+                        referredByElement.remove();
+                    }
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+    }
 
-  if(code){
-    getReferralData(code);
-  }else{
-    $('input[name="referral_id"]').val(0);
-    $('input[name="source"]').val("website");
-    $('.freetrial').find('#referredBy').remove();
-  }
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const code = urlParams.get("code");
+    const referringPage = window.location.href;
+    document.querySelector('input[name="referring_page"]').value = referringPage;
+
+    if (code) {
+        getReferralData(code);
+    } else {
+        document.querySelector('input[name="referral_id"]').value = 0;
+        document.querySelector('input[name="source"]').value = "website";
+        let referredByElement = document.getElementById("referredBy");
+        if (referredByElement) {
+            referredByElement.remove();
+        }
+    }
+
+    function sendForm() {
+        document.getElementById("contactForm").submit();
+    }
+
+    // Function that loads recaptcha on form input focus
+    function reCaptchaOnFocus() {
+        var head = document.getElementsByTagName("head")[0];
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://www.google.com/recaptcha/api.js";
+        head.appendChild(script);
+
+        // remove focus to avoid js error:
+        document.getElementById("emailaddress").removeEventListener("focus", reCaptchaOnFocus);
+    }
+
+    // add initial event listener to the form inputs
+    document.getElementById("emailaddress").addEventListener("focus", reCaptchaOnFocus, false);
 });

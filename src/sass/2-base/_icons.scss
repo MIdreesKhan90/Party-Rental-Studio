@@ -1,0 +1,19 @@
+$icons: (
+     "small-quote" "png" 30px 30px,
+     "play" "png" 20px 20px,
+     );
+
+@each $name, $fileType, $width, $height in $icons {
+  .icon-#{$name} {
+    display: inline-block;
+    vertical-align: text-top;
+    background: url($icons-path + "/" + $name + "." + $fileType) no-repeat 0 0;
+    background-size: cover;
+    @if ($width != "") {
+      width: $width;
+    }
+    @if ($height != "") {
+      height: $height;
+    }
+  }
+}

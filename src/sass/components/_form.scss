@@ -38,7 +38,8 @@
           }
         }
         select {
-          width: 403px;
+          width: 100%;
+          max-width: 403px;
           height: 58px;
           background-color: white;
           border-radius: 3px;

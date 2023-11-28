@@ -1,8 +1,10 @@
 ---
-title: Why do you need an online rental booking software?
+title: Benefits of Online Rental Booking Software
+pagetitle: Streamline Your Rental Business. Explore the Power of Online Booking Software
 author: Nancy Abrams
 category: Party Rental Software
 description: Do you operate a rental business? Whether you’re leasing out a property, furniture or anything in between, it’s important that you make the most of the various tools that are available to you.
+date: 2016-12-03
 ---
 
 <p>Do you operate a rental business? Whether you’re leasing out

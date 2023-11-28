@@ -3,15 +3,15 @@ layout: base.njk
 ---
 
 <div class="container">
-    <div class="page-title">
-        <h2>{{ title }}</h2>
+    <div id="article-header" class="page-title">
+        <h1>{{ pagetitle }}</h1>
         <p>{{ description }}</p>
     </div>
  </div>
-    <section class="section-share-post section">
-            <div class="container">
-                <div class="post-content">
-                    {{ content | safe }}
-                </div>
-            </div>
-    </section>
+<section class="article">
+    <div class="container">
+        <div class="post-content">
+            {{ content | safe }}
+        </div>
+    </div>
+</section>

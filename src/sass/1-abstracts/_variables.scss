@@ -1,0 +1,54 @@
+/////////////////////////////////////////////////////////////////////////////
+// GLOBAL VARIABLES
+/////////////////////////////////////////////////////////////////////////////
+
+$site-max-width: 1083px !default;
+
+$sm-em: 	"only screen and (min-width: 35.5em)";	// ≥ 568px
+$md-em: 	"only screen and (min-width: 40em)";	// ≥ 768px
+$lg-em: 	"only screen and (min-width: 64em) ";	// ≥ 1024px
+$lg-down-em: 	"only screen and (max-width:768px) ";	// ≥ 1024px
+$xl-em: 	"only screen and (min-width: 80em)";	// ≥ 1280px
+
+/////////////////////////////////////////////////////////////////////////////
+// COLORS
+/////////////////////////////////////////////////////////////////////////////
+
+$white         			: #FFFFFF !default;
+$primary-color			: #3b9768 !default;		// grean-ish?
+$secondary-color		: #3c434a !default;		// dark blue
+$accent-color			: #e94181 !default;		// pink
+$copy-color				: #3d444b !default;
+$background-light		: #f4f4f4 !default;		// light grey
+
+$secondary-color-light	: #f2e09c !default;		// light yellow
+$tertiary-color			: #73694f !default;		// dark yellow
+$link-color				: #3B9768 !default;
+$secondary-bg-color		: #0672a5 !default;
+
+$primary-blue	: #007dc3 !default;		// blue
+$primary-yellow	: #E0B431 !default;		// yellow
+$primary-green	: #6db338 !default;		// green
+
+$alert-color	: #f04124 !default;		// cinnabar
+$success-color	: #43AC6A !default;		// sea-green
+$warning-color	: #f08a24 !default;		// carrot
+$info-color		: #a0d3e8 !default;		// cornflower
+
+// We use these to control various global styles
+$body-bg			: rgb(244,238,230) !default;
+$body-font-color	: #222 !default;
+$body-font-style	: normal !default;
+$main-bg-color      : #000206 !default;
+$nav-font			: #ececec;
+
+//Footer color
+$footer-bg			: #202020 !default;
+$top-green-line     : #8acc46 !default;
+$top-green-bl       : #4a6d25 !default;
+
+
+//------------------------------- Paths
+$images-path: "/assets/images";
+$icons-path: $images-path + "/icons";
+
