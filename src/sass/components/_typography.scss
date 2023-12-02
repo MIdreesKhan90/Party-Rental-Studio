@@ -1,58 +1,4 @@
-/* open-sans-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/open-sans-v35-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../assets/fonts/open-sans-v35-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
 
-/* poppins-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* poppins-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../assets/fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* poppins-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../assets/fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/////////////////////////////////////////////////////////////////////////////
-// FONTS
-/////////////////////////////////////////////////////////////////////////////
-
-$font-family-header: 'Poppins', sans-serif;
-$font-family-body: 'Open Sans', sans-serif;
-$font-family-cursive: 'Playfair Display', serif;
-
-// We use these to define default font weights
-$font-weight-normal: normal !default;
-$font-weight-bold: bold !default;
-
-$font-copy-color: #3d444b;
 
 /////////////////////////////////////////////////////////////////////////////
 // BODY
@@ -65,6 +11,9 @@ p {line-height: 1.4;}
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-family-header;
 	font-weight: 600;
-	letter-spacing: -0.1rem;
 	color: #000;
+}
+
+h2{
+	font-size: 40px;
 }

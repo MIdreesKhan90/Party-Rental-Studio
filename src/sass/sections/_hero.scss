@@ -1,0 +1,83 @@
+.section-hero {
+  padding-top: 130px;
+  margin-top: -113px;
+  background-image: url($images-path + "/design24/hero-bg-img.webp");
+  background-size: cover;
+  overflow: hidden;
+
+  @include grid-lg-down {
+    margin-top: -72px;
+  }
+
+  @include grid-lg-down {
+    margin-top: -78px;
+  }
+
+  // background: linear-gradient(to top, rgba(244, 238, 230,0.5), rgba(244, 238, 230,0.2), #ffffff 100%);
+  // @include grid-lg-down {
+  //   background: linear-gradient(to top, rgba(244, 238, 230,1), rgba(244, 238, 230,0.7), #ffffff 100%);
+  // }
+
+  .title {
+    color: #2b3240;
+    font-family: $font-family-instrument;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 auto;
+    max-width: 677px;
+    margin-bottom: 20px;
+
+    span {
+      color: #3b9768;
+    }
+  }
+
+  .desc {
+    color: #8f939a;
+    font-family: $font-family-instrument;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    padding: 16px 27px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 41px;
+
+    i {
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+  .hero-img {
+    margin-bottom: -200px;
+    position: relative;
+
+    @include grid-sm-down {
+      margin-bottom: -70px;
+    }
+
+    &::after {
+      content: "";
+      background: url($images-path + "/design24/hero-arrow-down.png") 0 0 no-repeat;
+      display: block;
+      width: 177px;
+      height: 177px;
+      position: absolute;
+      right: 75px;
+      top: -128px;
+
+      @include grid-sm-down {
+        display: none;
+      }
+    }
+  }
+}

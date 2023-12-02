@@ -2,13 +2,90 @@
 // GLOBAL VARIABLES
 /////////////////////////////////////////////////////////////////////////////
 
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/open-sans-v35-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/open-sans-v35-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* poppins-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /////////////////////////////////////////////////////////////////////////////
+  // FONTS
+  /////////////////////////////////////////////////////////////////////////////
+
+  $font-family-header: 'Poppins', sans-serif;
+  $font-family-body: 'Open Sans', sans-serif;
+  $font-family-cursive: 'Playfair Display', serif;
+  $font-family-instrument : 'Instrument Sans',sans-serif;
+
+  // We use these to define default font weights
+  $font-weight-normal: normal !default;
+  $font-weight-bold: bold !default;
+
+  $font-copy-color: #3d444b;
+
+
+
+
 $site-max-width: 1083px !default;
 
-$sm-em: 	"only screen and (min-width: 35.5em)";	// ≥ 568px
-$md-em: 	"only screen and (min-width: 40em)";	// ≥ 768px
-$lg-em: 	"only screen and (min-width: 64em) ";	// ≥ 1024px
-$lg-down-em: 	"only screen and (max-width:768px) ";	// ≥ 1024px
-$xl-em: 	"only screen and (min-width: 80em)";	// ≥ 1280px
+// ------------------------ Responsive Queries
+
+$sm-em: "only screen and (min-width: 36em)"; // ≥ 576px
+$md-em: "only screen and (min-width: 48em)"; // ≥ 768px
+$lg-em: "only screen and (min-width: 62em) "; // ≥ 992px
+$xl-em: "only screen and (min-width: 75em)"; // ≥ 1200px
+
+$xs-only: "(max-width: 575.98px)";
+$sm-only: "(min-width: 576px) and (max-width: 767.98px)";
+$md-only: "(min-width: 768px) and (max-width: 991.98px)";
+$lg-only: "(min-width: 992px) and (max-width: 1199.98px)";
+$xl-only: "(min-width: 1200px)";
+
+$sm-down: "only screen and (max-width: 767.98px)";
+$md-down: "only screen and (max-width: 991.98px)";
+$lg-down: "only screen and (max-width: 1199.98px)";
+
+// $sm-em: 	"only screen and (min-width: 35.5em)";	// ≥ 568px
+// $md-em: 	"only screen and (min-width: 40em)";	// ≥ 768px
+// $lg-em: 	"only screen and (min-width: 64em) ";	// ≥ 1024px
+// $lg-down-em: 	"only screen and (max-width:768px) ";	// ≥ 1024px
+// $xl-em: 	"only screen and (min-width: 80em)";	// ≥ 1280px
 
 /////////////////////////////////////////////////////////////////////////////
 // COLORS
@@ -47,6 +124,15 @@ $footer-bg			: #202020 !default;
 $top-green-line     : #8acc46 !default;
 $top-green-bl       : #4a6d25 !default;
 
+$clr-snow: #FBFAF8;
+$clr-gray-60: #7C8088;
+$clr-gray-80: #535964;
+$clr-gray-100: #2B3240;
+
+
+$bg-colors: (
+  snow: $clr-snow
+);
 
 //------------------------------- Paths
 $images-path: "/assets/images";

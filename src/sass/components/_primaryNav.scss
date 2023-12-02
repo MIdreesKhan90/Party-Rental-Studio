@@ -13,7 +13,7 @@ Global Styles for Primary Menu
 nav,
 #overlay,
 #toggleMenuContainer,
-nav#primary,
+#primaryNav,
 #prs-logo {
     @include kreeTransition();
 }
@@ -34,10 +34,50 @@ nav#primary,
 }
 
 .primary-nav-wrapper {
+    padding-top: 2rem;
     min-height: 113px;
 
     @include grid-lg-down {
         min-height: 0;
+    }
+
+    @include grid-lg {
+        opacity: 1;
+        visibility: visible;
+        text-align: initial;
+        z-index: 1000;
+        position: relative;
+        width: 100%;
+
+        &.sticky {
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(9px);
+            top: 0;
+            width: 100%;
+            min-height: auto;
+            box-shadow: 0 30px 60px -45px #000000, -1px 0 0 rgba(0, 0, 0, 0.1);
+            -webkit-overflow-scrolling: touch;
+            opacity: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            animation: fadeInSlideDown 0.3s ease forwards;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        }
+        &.animate-up {
+            animation: fadeInSlideUp 0.3s ease;
+        }
+    }
+}
+
+.menu-action-btns{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+
+    @include grid-sm-down{
+        display: flex;
     }
 }
 
@@ -46,136 +86,53 @@ Primary Nav
 --------------------------------------*/
 
 .primary-nav {
-    padding-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include grid-sm-down{
+        display: none;
+    }
+
+    .left{
+        @include grid-sm-down{
+            display: none;
+        }
+    }
+
+
+    ul.menu {
+        margin: 0 20px 0 0;
+        display: inline-flex;
+        gap: 8px;
+        flex-wrap: wrap;
+
+        @include grid-sm-down{
+            flex-direction: column;
+            margin: 0 0 20px 0;
+        }
+
+        li {
+            .nav-link {
+                color: #8F939A;
+                font-family: $font-family-instrument;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 1.2em;
+                padding: 6px 7px;
+            }
+
+            &.active{
+                .nav-link{
+                    border-bottom: 2px solid #3B9768;
+                }
+            }
+        }
+    }
 }
 
 nav#primary-lean {
     #prs-logo {
         margin-top: 2em;
-        padding-left: 14px;
-
-        img {
-            width: 320px;
-        }
-
-        @include grid-lg {
-        }
-    }
-}
-
-nav#primary {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-    text-align: center;
-    transition: transform,opacity 0.5s ease;
-
-    @include grid-lg {
-        opacity: 1;
-        visibility: visible;
-        text-align: initial;
-        display: block;
-        z-index: 1000;
-
-        ///////////////////////////////////////////////////
-        // Comment the 2 lines below to make standard nav (non-fixed)
-        ///////////////////////////////////////////////////
-
-        position: relative;
-        width: 100%;
-
-        ///////////////////////////////////////////////////
-
-        &.sticky {
-            position: fixed;
-            background-color: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(9px);
-            top: 0;
-            width: 100%;
-            //height: 150px;
-            box-shadow: 0 30px 60px -45px #000000, -1px 0 0 rgba(0, 0, 0, 0.1);
-            -webkit-overflow-scrolling: touch;
-            opacity: 0;
-            padding-top: 15px;
-            animation: fadeInSlideDown 0.3s ease forwards;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-
-            #prs-logo {
-                img {
-                    height: 55px;
-                    width: auto;
-                }
-            }
-        }
-        &.animate-up {
-            animation: fadeInSlideUp 0.3s ease;
-        }
-
-        li {
-            display: inline-block;
-        }
-    }
-
-    #prs-logo {
-        float: none;
-        padding-left: 14px;
-        display: inline-block;
-        display: none;
-
-        @include grid-lg {
-            float: left;
-            display: block;
-            opacity: 1;
-            visibility: visible;
-            img {
-                width: 320px;
-            }
-        }
-    }
-
-    ul.menu {
-        margin: 0;
-        display: inline-block;
-        float: none;
-
-        @include grid-lg {
-            height: auto;
-            float: right;
-
-            li {
-                display: inline-block;
-            }
-        }
-
-        li {
-            padding: 10px 4px;
-            margin-bottom: 5px;
-
-            /*--------------------------------------
-                  Links Styling
-                  --------------------------------------*/
-
-            a {
-                font-size: 1rem;
-                text-transform: capitalize;
-                color: #fff;
-                font-weight: 400;
-                font-family: $font-family-header;
-                padding: 6px 30px;
-
-                @include grid-lg {
-                    padding: 6px 8px;
-                }
-
-                @include grid-xl {
-                    padding: 6px 12px;
-                }
-
-                @include grid-lg {
-                    color: #3d444b;
-                }
-            }
-        }
     }
 }
 
@@ -184,11 +141,9 @@ Mobile Menu Toggle
 --------------------------------------*/
 
 #prs-logo-mobile {
-    margin: 20px 18px 0 0;
-    padding-left: 14px;
-
+    margin-top: -5px;
     img {
-        max-width: 260px;
+        max-width: 213px;
     }
 
     @include grid-lg {
@@ -283,22 +238,14 @@ body.menu-active {
         background-color: transparent;
     }
 
-    nav#primary {
+    .primary-nav {
         opacity: 1;
         visibility: visible;
-        overflow-x: hidden;
         overflow-y: auto;
         display: block;
-        margin: 30px 0 0 0; //added top margin to avoid overlapping with close button
         z-index: 99999;
         position: fixed;
-        top: 50%;
-        left: 50%;
-        width: 100vh;
-        height: 90vh;
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
+        width: calc(100% - 30px);
         text-align: center;
 
         ul.menu li .prs-button,
@@ -313,34 +260,4 @@ body.menu-active {
     }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInSlideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInSlideUp {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-}

@@ -39,8 +39,17 @@ Includes the following custom build from Zurb Foundation 6.2.3:
 @import "components/shamefuloverride";
 
 // Base
+@import "2-base/animations";
 @import "2-base/base";
 @import "2-base/icons";
+@import "2-base/bg-colors";
+
+// Components
+@import "components/buttons";
+
+// Sections
+@import "sections/header";
+@import "sections/hero";
 
 // Pages
 @import "pages/home";

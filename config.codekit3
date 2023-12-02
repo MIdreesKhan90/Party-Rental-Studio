@@ -9,6 +9,25 @@
   ],
   "creatorBuild" : "34434",
   "files" : {
+    "\/_template.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/_template.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/.eleventy-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -55,6 +74,12 @@
       "oAP" : "\/.htaccess",
       "oF" : 0
     },
+    "\/.idea" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/.idea",
+      "oF" : 0
+    },
     "\/node_modules" : {
       "ft" : 65536,
       "oA" : 2,
@@ -76,6 +101,14 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/public\/_redirects" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/public\/_redirects",
+      "oF" : 0
     },
     "\/public\/.well-known\/apple-developer-merchantid-domain-association" : {
       "cB" : 0,
@@ -139,6 +172,46 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/public\/articles\/1\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/articles\/1\/index.html",
+      "oF" : 0
+    },
+    "\/public\/articles\/2\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/articles\/2\/index.html",
+      "oF" : 0
+    },
+    "\/public\/articles\/3\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/articles\/3\/index.html",
+      "oF" : 0
+    },
+    "\/public\/articles\/4\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/articles\/4\/index.html",
+      "oF" : 0
+    },
+    "\/public\/articles\/5\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/articles\/5\/index.html",
+      "oF" : 0
     },
     "\/public\/articles\/index.html" : {
       "cB" : 0,
@@ -1603,6 +1676,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/public\/assets\/js\/main-min-backup.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/public\/assets\/js\/main-min-backup-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/public\/assets\/js\/main-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -1772,6 +1856,14 @@
       "oAP" : "\/public\/engaging-customers-with-fresh-content\/index.html",
       "oF" : 0
     },
+    "\/public\/enhancing-your-party-rental-business-leveraging-data-analytics-for-success\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/enhancing-your-party-rental-business-leveraging-data-analytics-for-success\/index.html",
+      "oF" : 0
+    },
     "\/public\/ensure-repeat-business-for-your-party-rental-company\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1820,6 +1912,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/public\/featuring-products-online\/index.html",
+      "oF" : 0
+    },
+    "\/public\/five-best-software-for-party-rental-in-2023\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/five-best-software-for-party-rental-in-2023\/index.html",
       "oF" : 0
     },
     "\/public\/flourish-by-leaps-and-bounds-in-your-party-rental-business-with-our-new-technology\/index.html" : {
@@ -1902,6 +2002,14 @@
       "oAP" : "\/public\/maximizing-growth-via-e-commerce-solutions\/index.html",
       "oF" : 0
     },
+    "\/public\/maximizing-roi-on-your-party-rental-inventory-investment\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/maximizing-roi-on-your-party-rental-inventory-investment\/index.html",
+      "oF" : 0
+    },
     "\/public\/mstile-150x150.png" : {
       "ft" : 32768,
       "iS" : 4407,
@@ -1915,12 +2023,28 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/public\/off-season-optimization-tips-for-a-thriving-party-rental-business\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/off-season-optimization-tips-for-a-thriving-party-rental-business\/index.html",
+      "oF" : 0
+    },
     "\/public\/online-rental-booking-software\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/public\/online-rental-booking-software\/index.html",
+      "oF" : 0
+    },
+    "\/public\/party-rental-studio-versus-booqable\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/party-rental-studio-versus-booqable\/index.html",
       "oF" : 0
     },
     "\/public\/party-rental-website-design\/index.html" : {
@@ -2005,12 +2129,36 @@
       "oAP" : "\/public\/sitemap\/index.html",
       "oF" : 0
     },
+    "\/public\/template\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/template\/index.html",
+      "oF" : 0
+    },
+    "\/public\/testing\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/testing\/index.html",
+      "oF" : 0
+    },
     "\/public\/the-importance-of-knowing-your-customer\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/public\/the-importance-of-knowing-your-customer\/index.html",
+      "oF" : 0
+    },
+    "\/public\/the-power-of-marketing-automation-for-party-rental-businesses\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/the-power-of-marketing-automation-for-party-rental-businesses\/index.html",
       "oF" : 0
     },
     "\/public\/using-online-marketing-to-boost-your-party-rental-business\/index.html" : {
@@ -2069,6 +2217,14 @@
       "oAP" : "\/src\/_includes\/article.njk",
       "oF" : 0
     },
+    "\/src\/_includes\/base-backup.njk" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/_includes\/base-backup.njk",
+      "oF" : 0
+    },
     "\/src\/_includes\/base.njk" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2099,6 +2255,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/_includes\/section-form.njk",
+      "oF" : 0
+    },
+    "\/src\/_redirects" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/_redirects",
       "oF" : 0
     },
     "\/src\/.well-known\/apple-developer-merchantid-domain-association" : {
@@ -2212,6 +2376,25 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/src\/articles\/enhancing-your-party-rental-business-leveraging-data-analytics-for-success.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/articles\/enhancing-your-party-rental-business-leveraging-data-analytics-for-success.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/src\/articles\/ensure-repeat-business-for-your-party-rental-company.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -2242,6 +2425,25 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/articles\/featuring-products-online.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/src\/articles\/five-best-software-for-party-rental-in-2023.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/articles\/five-best-software-for-party-rental-in-2023.html",
       "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
@@ -2364,6 +2566,44 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/src\/articles\/maximizing-roi-on-your-party-rental-inventory-investment.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/articles\/maximizing-roi-on-your-party-rental-inventory-investment.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/src\/articles\/off-season-optimization-tips-for-a-thriving-party-rental-business.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/articles\/off-season-optimization-tips-for-a-thriving-party-rental-business.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/src\/articles\/online-rental-booking-software.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -2375,6 +2615,25 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/articles\/online-rental-booking-software.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/src\/articles\/party-rental-studio-versus-booqable.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/articles\/party-rental-studio-versus-booqable.html",
       "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
@@ -2432,6 +2691,25 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/articles\/the-importance-of-knowing-your-customer.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/src\/articles\/the-power-of-marketing-automation-for-party-rental-businesses.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/articles\/the-power-of-marketing-automation-for-party-rental-businesses.html",
       "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
@@ -3384,6 +3662,16 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/src\/assets\/images\/icons\/arrow-right.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/src\/assets\/images\/icons\/arrow-right.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/src\/assets\/images\/icons\/play.png" : {
       "ft" : 32768,
       "iS" : 535,
@@ -3408,6 +3696,67 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/src\/assets\/images\/new-design\/hero-arrow-down.png" : {
+      "ft" : 32768,
+      "iS" : 2215,
+      "oA" : 0,
+      "oAP" : "\/src\/assets\/images\/new-design\/hero-arrow-down.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/src\/assets\/images\/new-design\/hero-bg-img.png" : {
+      "ft" : 32768,
+      "iS" : 169583,
+      "oA" : 0,
+      "oAP" : "\/src\/assets\/images\/new-design\/hero-bg-img.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 90,
+      "rq" : 89
+    },
+    "\/src\/assets\/images\/new-design\/hero-bg-img.webp" : {
+      "ft" : 8388608,
+      "iS" : 11508,
+      "oA" : 0,
+      "oAP" : "\/src\/assets\/images\/new-design\/hero-bg-img.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/src\/assets\/images\/new-design\/home-hero.png" : {
+      "ft" : 32768,
+      "iS" : 494790,
+      "oA" : 0,
+      "oAP" : "\/src\/assets\/images\/new-design\/home-hero.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 90,
+      "rq" : 90
+    },
+    "\/src\/assets\/images\/new-design\/home-hero.webp" : {
+      "ft" : 8388608,
+      "iS" : 120652,
+      "oA" : 0,
+      "oAP" : "\/src\/assets\/images\/new-design\/home-hero.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/src\/assets\/images\/partyrentalstudio-white.svg" : {
@@ -3713,6 +4062,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/src\/assets\/js\/main-min-backup.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/src\/assets\/js\/main-min-backup-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/src\/assets\/js\/main-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -3890,6 +4250,14 @@
       "oAP" : "\/src\/favicon\/site.webmanifest",
       "oF" : 0
     },
+    "\/src\/index-backup.njk" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/index-backup.njk",
+      "oF" : 0
+    },
     "\/src\/index.njk" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4015,6 +4383,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/sass\/2-base\/_animations.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/sass\/2-base\/_animations.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/sass\/2-base\/_base.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -4040,6 +4423,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/src\/sass\/2-base\/_icons.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/src\/sass\/components\/_buttons.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/sass\/components\/_buttons.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -4180,17 +4578,35 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/sass\/styles.css" : {
-      "aP" : 1,
+    "\/src\/sass\/sections\/_header.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/sass\/styles-min.css",
+      "oA" : 1,
+      "oAP" : "\/src\/sass\/sections\/_header.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/src\/sass\/sections\/_hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/sass\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/src\/sass\/styles.scss" : {
       "aP" : 0,
@@ -4213,14 +4629,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/sitemap.njk",
-      "oF" : 0
-    },
-    "\/yarn.lock" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/yarn.lock",
       "oF" : 0
     }
   },

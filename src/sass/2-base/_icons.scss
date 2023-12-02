@@ -1,6 +1,11 @@
 $icons: (
      "small-quote" "png" 30px 30px,
      "play" "png" 20px 20px,
+
+    //  new design icon
+    "arrow-right" "svg" 14px 14px,
+    "quote-fill" "svg" 24px 24px,
+    "quote-outline" "svg" 24px 24px,
      );
 
 @each $name, $fileType, $width, $height in $icons {

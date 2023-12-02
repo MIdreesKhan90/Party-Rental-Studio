@@ -9,6 +9,13 @@
 ////////////////////////////////////////////////////
 
 
+
+@mixin grid-lg-down {
+  @media #{$lg-down-em} {
+    @content;
+  }
+}
+
 @mixin grid-sm {
   @media #{$sm-em} {
     @content;
@@ -26,14 +33,57 @@
     @content;
   }
 }
-@mixin grid-lg-down {
-  @media #{$lg-down-em} {
+
+@mixin grid-xl {
+  @media #{$xl-em} {
     @content;
   }
 }
 
-@mixin grid-xl {
-  @media #{$xl-em} {
+@mixin grid-xs-only {
+  @media #{$xs-only} {
+    @content;
+  }
+}
+
+@mixin grid-sm-only {
+  @media #{$sm-only} {
+    @content;
+  }
+}
+
+@mixin grid-md-only {
+  @media #{$md-only} {
+    @content;
+  }
+}
+
+@mixin grid-lg-only {
+  @media #{$lg-only} {
+    @content;
+  }
+}
+
+@mixin grid-xl-only {
+  @media #{$xl-only} {
+    @content;
+  }
+}
+
+@mixin grid-sm-down {
+  @media #{$sm-down} {
+    @content;
+  }
+}
+
+@mixin grid-md-down {
+  @media #{$md-down} {
+    @content;
+  }
+}
+
+@mixin grid-lg-down {
+  @media #{$lg-down} {
     @content;
   }
 }
