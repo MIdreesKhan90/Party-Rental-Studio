@@ -6,6 +6,14 @@ $icons: (
     "arrow-right" "svg" 14px 14px,
     "quote-fill" "svg" 24px 24px,
     "quote-outline" "svg" 24px 24px,
+    "track-inventory" "svg" 28px 28px,
+    "process-invoices" "svg" 22px 26px,
+    "electronic-signature" "svg" 28px 21px,
+    "payment-processing" "svg" 28px 28px,
+    "event-calendar" "svg" 28px 25px,
+    "delivery-routes" "svg" 28px 28px,
+    "seo-friendly" "svg" 28px 28px,
+    "manage-website" "svg" 25px 25px,
      );
 
 @each $name, $fileType, $width, $height in $icons {
