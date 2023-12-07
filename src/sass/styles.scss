@@ -28,7 +28,6 @@ Includes the following custom build from Zurb Foundation 6.2.3:
 @import "1-abstracts/css3-mixins";
 
 // Components
-@import "components/typography";
 @import "components/template_global";
 @import "components/template_subpage";
 @import "components/utility"; //foundation extension, helpers, responsive helpers
@@ -41,15 +40,19 @@ Includes the following custom build from Zurb Foundation 6.2.3:
 // Base
 @import "2-base/animations";
 @import "2-base/base";
+@import "2-base/typography";
 @import "2-base/icons";
 @import "2-base/bg-colors";
 
 // Components
 @import "components/buttons";
+@import "components/carousel";
 
 // Sections
 @import "sections/header";
 @import "sections/hero";
+@import "sections/features";
+@import "sections/articles";
 
 // Pages
 @import "pages/home";

@@ -48,10 +48,12 @@
   // FONTS
   /////////////////////////////////////////////////////////////////////////////
 
-  $font-family-header: 'Poppins', sans-serif;
-  $font-family-body: 'Open Sans', sans-serif;
-  $font-family-cursive: 'Playfair Display', serif;
-  $font-family-instrument : 'Instrument Sans',sans-serif;
+$font-family-instrument : 'Instrument Sans',sans-serif;
+$font-family-inter : 'Inter', sans-serif;
+
+$font-family-header: $font-family-instrument;
+$font-family-body: $font-family-instrument;
+$font-family-cursive: 'Playfair Display', serif;
 
   // We use these to define default font weights
   $font-weight-normal: normal !default;
@@ -124,14 +126,16 @@ $footer-bg			: #202020 !default;
 $top-green-line     : #8acc46 !default;
 $top-green-bl       : #4a6d25 !default;
 
+$clr-light: #f4eee6;
 $clr-snow: #FBFAF8;
 $clr-gray-60: #7C8088;
 $clr-gray-80: #535964;
 $clr-gray-100: #2B3240;
 
-
 $bg-colors: (
-  snow: $clr-snow
+  "snow": $clr-snow,
+  "white": $white,
+  "light": $clr-light,
 );
 
 //------------------------------- Paths

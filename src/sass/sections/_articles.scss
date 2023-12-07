@@ -1,0 +1,60 @@
+.article-card {
+  img {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .categories {
+    color: #8f939a;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-bottom: 16px;
+
+    a {
+      color: #535964;
+      font-size: 16px;
+      text-decoration-line: underline;
+    }
+  }
+
+  .title{
+    h4 {
+      color: $clr-gray-100;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    &:hover{
+      h4{
+        text-decoration: underline;
+        color: $primary-color;
+      }
+    }
+  }
+
+
+  .desc {
+    color: $clr-gray-80;
+    margin-bottom: 16px;
+  }
+
+  .date {
+    color: $clr-gray-80;
+    font-family: $font-family-inter;
+  }
+
+  .btn-read-more {
+    color: $clr-gray-100;
+    font-weight: 500;
+    text-decoration-line: underline;
+    margin-top: 24px;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
+
+.section-articles {
+  .btn-lg {
+    margin: 64px auto 0;
+  }
+}

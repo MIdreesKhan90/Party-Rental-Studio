@@ -1,0 +1,45 @@
+.features-card {
+
+    @include grid-sm-down{
+        margin-bottom: 30px;
+    }
+
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background: #454c5b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @include grid-sm-down{
+        margin-bottom: 12px;
+    }
+  }
+
+  h5 {
+    color: #fff;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: #afb5bf;
+    margin-bottom: 0;
+  }
+}
+
+.section-features {
+  background: #2b3240 url($images-path + "/design24/bg-squares.png") 0 0;
+  background-size: cover;
+
+  .flex-row{
+    + .flex-row{
+        margin-top: 72px;
+        @include grid-sm-down{
+            margin-top: 0;
+        }
+    }
+  }
+}

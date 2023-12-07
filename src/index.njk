@@ -8,9 +8,9 @@ layout: base.njk
 <section class="section-hero">
     <div class="container-md">
         <div class="hero-content">
-            <h1 class="title">Manage Your <span>Inventory,</span> Clients &amp; Orders</h1>
+            <h1 class="title">Manage Your <span class="text-primary">Inventory,</span> Clients &amp; Orders</h1>
             <p class="desc">Trusted by Event &amp; Party Rental Businesses Worldwide</p>
-            <a href="{{ '/free-trial' }}" class="btn btn-primary">Sign Up for Free Trial <i class="icon icon-arrow-right"></i>
+            <a href="{{ '/free-trial' }}" class="btn btn-primary btn-lg btn-icon">Sign Up for Free Trial <i class="icon icon-arrow-right"></i>
             </a>
             {#
                 <button class="btn btn-outline" id="inventory-video-btn">
@@ -102,50 +102,39 @@ layout: base.njk
     </div>
 </section>
 
-<section class="section-content section prs-highlights">
-    <div class="container">
+<section class="section section-content bg-white">
+    <div class="container-md">
+        <div class="section-title text-center">
+            <h2>
+                <span class="text-primary">Party Rental</span> Software Made Easy</span></h2>
+        <p class="section-desc">Streamline your party rental business with our all-in-one software. What sets us apart from the competition is that our event rental management software is very user-friendly. Unlike our competitors who cater to a wide range of rental businesses, our software is built specifically for party & event rental businesses.</p>
+    </div>
 
-        <div class="section-title" style="margin-bottom: 0;">
-            <h2>Party Rental Software Made Easy</h2>
-            <p style="margin-bottom: 0;">Streamline your party rental business with our all-in-one software. What sets us apart from the competition is that our event rental management software is very user-friendly. Unlike our competitors who <strong>cater to a wide range of rental businesses</strong>, our software is <strong>built specifically</strong> for party & event rental businesses. <a href="/free-trial/">Try it for free</a> and see for yourself.</p>
+    <div class="flex-row align-items-center" id="MyContainerId">
+        <div class="col-5">
+            <h3 class="title">Stunning Dashboard To Manage Your Business</h3>
+            <p class="desc">Our dashboard provides a quick overview of your account, recent orders, upcoming events, pending payments, and more. It's the perfect tool to give you all the information you need at a glance.</p>
+            <a href="{{ '/free-trial' }}" class="btn btn-primary btn-md btn-icon">Sign Up for Free Trial <i class="icon icon-arrow-right"></i>
+            </a>
         </div>
-
-        <div class="flex-row md-block mb-90" id="MyContainerId" style="margin-top: 36px;">
-            <div class="row-content">
-                <div class="title">
-                    <h3>Stunning Dashboard To Manage Your Business</h3>
-                </div>
-                <p>Our dashboard provides a quick overview of your account, recent orders, upcoming events, pending payments, and more. It's the perfect tool to give you all the information you need at a glance.</p>
-                <a href="/free-trial" class="hidemobile">Sign up for a free trial <div class="learn-more-icon" class="arrow-wrapper">
-                        <div class="arrow arrow--right">
-                            <span></span></div>
-                    </div>
-                </a>
-            </div>
-            <div class="row-img">
-                <dotlottie-player class="lottie-animation" loop mode="normal" src="./assets/lottie/dashboard.lottie"></dotlottie-player>
-                <img class="only-mobile" src="./assets/images/home-snippets-dashboard.png" alt="Stunning Dashboard To Manage Your Business">
-            </div>
+        <div class="col-7">
+            <dotlottie-player class="lottie-animation" loop mode="normal" src="./assets/lottie/dashboard.lottie"></dotlottie-player>
+            <img class="only-mobile" src="./assets/images/home-snippets-dashboard.png" alt="Stunning Dashboard To Manage Your Business">
         </div>
-
-        <div class="flex-row md-reverse mb-90" style="margin-top: 36px;">
-            <div class="row-img">
-                <dotlottie-player class="lottie-animation" loop mode="normal" src="./assets/lottie/settings.lottie"></dotlottie-player>
-                <img class="only-mobile" src="./assets/images/home-snippets-settings.png" alt="Customize Your Storefront">
-            </div>
-            <div class="row-content">
-                <div class="title">
-                    <h3>Customize Your Storefront</h3>
-                </div>
-                <p>We understand that as the business owner, you know your business best. Therefore, our storefront configurator lets you personalize the shopping experience to fit your business needs.</p>
-                <a href="/free-trial" class="hidemobile">Sign up for a free trial <div class="learn-more-icon" class="arrow-wrapper">
-                        <div class="arrow arrow--right">
-                            <span></span></div>
-                    </div>
-                </a>
-            </div>
+    </div>
+    <div class="flex-row align-items-center">
+        <div class="col-7 order-12">
+            <dotlottie-player class="lottie-animation" loop mode="normal" src="./assets/lottie/settings.lottie"></dotlottie-player>
+            <img class="only-mobile" src="./assets/images/home-snippets-settings.png" alt="Customize Your Storefront">
         </div>
-        {#
+        <div class="col-5 order-1">
+            <h3 class="title">Customize Your Storefront</h3>
+            <p class="desc">We understand that as the business owner, you know your business best. Therefore, our storefront configurator lets you personalize the shopping experience to fit your business needs.</p>
+            <a href="{{ '/free-trial' }}" class="btn btn-primary btn-md btn-icon">Sign Up for Free Trial <i class="icon icon-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    {#
                 <div class="flex-row md-block mb-90">
                     <div class="row-content">
                         <div class="title">
@@ -186,190 +175,189 @@ layout: base.njk
                 </div>
 
                 #}
-    </div>
-
-    <section class="section-features">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>....and more awesome features</h2>
-            </div>
-            <div class="flex-row md-block">
-                <div class="feature">
-                    <ul>
-                        <li>
-                            <span><img src="./assets/images/home-feature-inventory.png" loading="lazy" width="50" height="56" alt="Track Inventory"></span>
-                            <h3>Track Inventory</h3>
-                            <p>Easily keep track of your inventory with real time product availability to prevent double booking.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature">
-                    <ul>
-                        <li>
-                            <span><img src="./assets/images/home-feature-invoices.png" loading="lazy" width="50" height="62" alt="Process Invoices"></span>
-                            <h3>Process Invoices</h3>
-                            <p>All reservations are automatically recorded in your back office so you can generate invoices in seconds.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature">
-                    <ul>
-                        <li>
-                            <span><img src="./assets/images/home-feature-signature.png" loading="lazy" width="50" height="52" alt="Electronic Signature"></span>
-                            <h3>Electronic Signature</h3>
-                            <p>Capture your customer's signature on the go and it will automatically appear on your invoice or contract.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature">
-                    <ul>
-                        <li>
-                            <span><img src="./assets/images/home-feature-payment.png" loading="lazy" width="50" height="35" alt="Payment Processing"></span>
-                            <h3>Payment Processing</h3>
-                            <p>Accept payment for online reservations using PayPal, Stripe, Square or Authorize.net</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature">
-                    <ul>
-                        <li>
-                            <span><img src="./assets/images/home-feature-calendar.png" loading="lazy" width="50" height="51" alt="Event Calendar"></span>
-                            <h3>Event Calendar</h3>
-                            <p>See all your upcoming events with confidence, using our daily, weekly, or monthly calendar view.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature">
-                    <ul>
-                        <li>
-                            <span><img src="./assets/images/home-feature-routes.png" loading="lazy" width="50" height="45" alt="Delivery Routes"></span>
-                            <h3>Delivery Routes</h3>
-                            <p>Allow our software to plan the best route based on event locations or the most optimal paths.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature">
-                    <ul>
-                        <li>
-                            <span><img src="./assets/images/home-feature-website.png" loading="lazy" width="50" height="37" alt="Manage Website"></span>
-                            <h3>Manage Website</h3>
-                            <p>No HTML or technical skills necessary. Easily post blogs or add as many pages to your website as you want.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="feature">
-                    <ul>
-                        <li>
-                            <span><img src="./assets/images/home-feature-seo.png" loading="lazy" width="50" height="51" alt="SEO Friendly"></span>
-                            <h3>SEO Friendly</h3>
-                            <p>Our website has been optimized to include everything you need to rank on search engines.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
+</div>
 </section>
 
-<section class="section section-articles prs-highlights">
-    <div class="container">
-        <div class="section-title">
-            <h2>Helpful Articles</h2>
-            <p>Browse our collection of helpful articles and case studies to help you run your party rental business more efficiently and win more customers using online marketing, social media, and the technology our solution provides.</p>
-        </div>
-        <div class="flex-row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-top">
-                        <div class="card-img">
-                            <img src="./assets/images/demo/card-1.webp" loading="lazy" width="335" height="244" alt="Social Media & Marketing">
-                        </div>
-                        <div class="card-title">
-                            <a href="/10-inexpensive-ways-to-promote-your-party-rental-website/" class="links">
-                                <h3>10 Inexpensive Ways to Promote Your Party Rental Website</h3>
-                            </a>
-                        </div>
-                    </div>
+<section class="section section-features">
+<div class="container-md">
+    <div class="section-title text-center">
+        <h2 class="text-white">....and more awesome features</h2>
+    </div>
+    <div class="flex-row">
+        <div class="col-3">
+            <div class="features-card">
+                <div class="card-icon">
+                    <i class="icon icon-track-inventory"></i>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-top">
-                        <div class="card-img">
-                            <img src="./assets/images/demo/card-2.webp" loading="lazy" width="335" height="244" alt="Customer Relationship">
-                        </div>
-                        <div class="card-title">
-                            <a href="/5-quick-tips-for-gaining-business-referrals/" class="links">
-                                <h3>5 Quick Tips For Gaining Business Referrals</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-top">
-                        <div class="card-img">
-                            <img src="./assets/images/demo/card-3.webp" loading="lazy" width="335" height="244" alt="Social Media & Marketing">
-                        </div>
-                        <div class="card-title">
-                            <a href="/featuring-products-online/" class="links">
-                                <h3>How To Promote Your Rental Products Online</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <h5>Track Inventory</h5>
+                <p>Easily keep track of your inventory with real time product availability to prevent double booking.</p>
             </div>
         </div>
-        <div class="buttons">
-            <button class="btn btn-green" onclick="window.location.href='/articles/'">Browse All Articles</button>
+        <div class="col-3">
+            <div class="features-card">
+                <div class="card-icon">
+                    <i class="icon icon-process-invoices"></i>
+                </div>
+                <h5>Process Invoices</h5>
+                <p>All reservations are automatically recorded in your back office so you can generate invoices in seconds.</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="features-card">
+                <div class="card-icon">
+                    <i class="icon icon-electronic-signature"></i>
+                </div>
+                <h5>Electronic Signature</h5>
+                <p>Capture your customer's signature on the go and it will automatically appear on your invoice or contract.</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="features-card">
+                <div class="card-icon">
+                    <i class="icon icon-payment-processing"></i>
+                </div>
+                <h5>Payment Processing</h5>
+                <p>Accept payment for online reservations using PayPal, Stripe, Square or Authorize.net</p>
+            </div>
         </div>
     </div>
+    <div class="flex-row">
+        <div class="col-3">
+            <div class="features-card">
+                <div class="card-icon">
+                    <i class="icon icon-event-calendar"></i>
+                </div>
+                <h5>Event Calendar</h5>
+                <p>See all your upcoming events with confidence, using our daily, weekly, or monthly calendar view.</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="features-card">
+                <div class="card-icon">
+                    <i class="icon icon-delivery-routes"></i>
+                </div>
+                <h5>Delivery Routes</h5>
+                <p>Allow our software to plan the best route based on event locations or the most optimal paths.</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="features-card">
+                <div class="card-icon">
+                    <i class="icon icon-manage-website"></i>
+                </div>
+                <h5>Manage Website</h5>
+                <p>No HTML or technical skills necessary. Easily post blogs or add as many pages to your website as you want</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="features-card">
+                <div class="card-icon">
+                    <i class="icon icon-seo-friendly"></i>
+                </div>
+                <h5>SEO Friendly</h5>
+                <p>Our website has been optimized to include everything you need to rank on search engines.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="section section-articles">
+<div class="container-md">
+    <div class="section-title">
+        <h2>Helpful <span class="text-primary">Articles</span></h2>
+    </div>
+    <div class="articles-carousel">
+        <div>
+            <div class="article-card">
+                <img src="./assets/images/demo/card-1.webp" loading="lazy" alt="Social Media & Marketing">
+                <p class="categories">Categories : <a href="/">Social Media & Marketing</a></p>
+                <a href="/10-inexpensive-ways-to-promote-your-party-rental-website/" class="title"><h4>10 Inexpensive Ways to Promote Your Party Rental Website</h4></a>
+                <p class="desc">Learn effective strategies to maximize your party rental business's ROI on inventory investment, from intel...</p>
+                <p class="date">11/07/2023</p>
+                <a href="/10-inexpensive-ways-to-promote-your-party-rental-website/" class="btn-read-more">Read more</a>
+            </div>
+        </div>
+        <div>
+            <div class="article-card">
+                <img src="./assets/images/demo/card-2.webp" loading="lazy" alt="Customer Relationship">
+                <p class="categories">Categories : <a href="/">Customer Relationship</a></p>
+                <a href="/5-quick-tips-for-gaining-business-referrals/" class="title"><h4>5 Quick Tips For Gaining Business Referrals</h4></a>
+                <p class="desc">Learn effective strategies to maximize your party rental business's ROI on inventory investment, from intel...</p>
+                <p class="date">11/07/2023</p>
+                <a href="/5-quick-tips-for-gaining-business-referrals/" class="btn-read-more">Read more</a>
+            </div>
+        </div>
+        <div>
+            <div class="article-card">
+                <img src="./assets/images/demo/card-3.webp" loading="lazy" alt="Social Media & Marketing">
+                <p class="categories">Categories : <a href="/">Social Media & Marketing</a></p>
+                <a href="/featuring-products-online/" class="title"><h4>How To Promote Your Rental Products Online</h4></a>
+                <p class="desc">Learn effective strategies to maximize your party rental business's ROI on inventory investment, from intel...</p>
+                <p class="date">11/07/2023</p>
+                <a href="/featuring-products-online/" class="btn-read-more">Read more</a>
+            </div>
+        </div>
+        <div>
+            <div class="article-card">
+                <img src="./assets/images/demo/card-1.webp" loading="lazy" alt="Social Media & Marketing">
+                <p class="categories">Categories : <a href="/">Social Media & Marketing</a></p>
+                <a href="/10-inexpensive-ways-to-promote-your-party-rental-website/" class="title"><h4>10 Inexpensive Ways to Promote Your Party Rental Website</h4></a>
+                <p class="desc">Learn effective strategies to maximize your party rental business's ROI on inventory investment, from intel...</p>
+                <p class="date">11/07/2023</p>
+                <a href="/10-inexpensive-ways-to-promote-your-party-rental-website/" class="btn-read-more">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="/articles/1/" class="btn btn-primary btn-lg btn-icon">Browse All Articles <i class="icon icon-arrow-right"></i>
+        </a>
+    </div>
+</div>
 </section>
 
 {% include "section-form.njk" %}
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        if (window.innerWidth >= 768) {
-            document
-                .querySelectorAll("script[data-src]")
-                .forEach(script => {
-                    script.setAttribute("src", script.getAttribute("data-src"));
-                    script.removeAttribute("data-src");
-                });
-
-            const playLottieOnView = (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Play the Lottie animation when it's in view
-                        entry
-                            .target
-                            .play();
-                    } else {
-                        entry
-                            .target
-                            .stop();
-                    }
-                });
-            };
-
-            const observerOptions = {
-                root: null, // relative to the viewport
-                threshold: 0.1 // play when 10% of the animation is visible
-            };
-
-            // Initialize the IntersectionObserver
-            const observer = new IntersectionObserver(playLottieOnView, observerOptions);
-
-            // Select all the Lottie animations on the page
-            const lottieElements = document.querySelectorAll('.lottie-animation');
-
-            // Attach the IntersectionObserver to each Lottie animation
-            lottieElements.forEach(lottieElement => {
-                observer.observe(lottieElement);
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth >= 768) {
+        document
+            .querySelectorAll("script[data-src]")
+            .forEach(script => {
+                script.setAttribute("src", script.getAttribute("data-src"));
+                script.removeAttribute("data-src");
             });
-        }
-    });
+
+        const playLottieOnView = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Play the Lottie animation when it's in view
+                    entry
+                        .target
+                        .play();
+                } else {
+                    entry
+                        .target
+                        .stop();
+                }
+            });
+        };
+
+        const observerOptions = {
+            root: null, // relative to the viewport
+            threshold: 0.1 // play when 10% of the animation is visible
+        };
+
+        // Initialize the IntersectionObserver
+        const observer = new IntersectionObserver(playLottieOnView, observerOptions);
+
+        // Select all the Lottie animations on the page
+        const lottieElements = document.querySelectorAll('.lottie-animation');
+
+        // Attach the IntersectionObserver to each Lottie animation
+        lottieElements.forEach(lottieElement => {
+            observer.observe(lottieElement);
+        });
+    }
+});
 </script>

@@ -213,57 +213,91 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // add initial event listener to the form inputs
   document.getElementById("emailaddress").addEventListener("focus", reCaptchaOnFocus, false);
-
-
-
 });
-$(document).ready(function(){
-    var $slider = $('.reviews-carousel');
+$(document).ready(function () {
+  function updateNavigationButtons($slider) {
+    var currentSlide = $slider.slick("slickCurrentSlide");
+    var slideCount = $slider.slick("getSlick").slideCount;
+    var slidesToShow = $slider.slick("slickGetOption", "slidesToShow");
 
-    // Initialize Slick Slider
+    $slider.find(".slick-prev").prop("disabled", currentSlide === 0);
+    $slider.find(".slick-next").prop("disabled", currentSlide >= slideCount - slidesToShow);
+  }
 
-    $slider.slick({
-        infinite: true,
-        centerMode: true,
-        centerPadding: 0,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev"><i class="icon-prev"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="icon-next"></i></button>',
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      });
+  var $sliderReview = $(".reviews-carousel");
 
-    function updateNavigationButtons() {
-        var currentSlide = $slider.slick('slickCurrentSlide');
-        var slideCount = $slider.slick('getSlick').slideCount;
-        var slidesToShow = $slider.slick('slickGetOption', 'slidesToShow');
+  // Initialize Slick Slider
 
-        $('.slick-prev').prop('disabled', currentSlide === 0);
-        $('.slick-next').prop('disabled', currentSlide >= slideCount - slidesToShow);
-    }
+  $sliderReview.slick({
+    infinite: true,
+    centerMode: true,
+    centerPadding: 0,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"><i class="icon-prev"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="icon-next"></i></button>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 
-    // Initial check
-    updateNavigationButtons();
+  // Initial check
+  updateNavigationButtons($sliderReview);
 
-    // Bind to the afterChange event
-    $slider.on('afterChange', function(event, slick, currentSlide){
-        updateNavigationButtons();
-    });
+  // Bind to the afterChange event
+  $sliderReview.on("afterChange", function (event, slick, currentSlide) {
+    updateNavigationButtons($sliderReview);
+  });
+
+  // articles-carousel
+  var $sliderArticles = $(".articles-carousel");
+
+  $sliderArticles.slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"><i class="icon-prev"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="icon-next"></i></button>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
+  // Initial check
+  updateNavigationButtons($sliderArticles);
+
+  // Bind to the afterChange event
+  $sliderArticles.on("afterChange", function (event, slick, currentSlide) {
+    updateNavigationButtons($sliderArticles);
+  });
 });

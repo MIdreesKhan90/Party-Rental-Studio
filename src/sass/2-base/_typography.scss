@@ -1,0 +1,54 @@
+/////////////////////////////////////////////////////////////////////////////
+// BODY
+/////////////////////////////////////////////////////////////////////////////
+
+div, td, p, li, a, span {
+    color: $font-copy-color;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-header;
+    font-weight: 700;
+    color: #000;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 27px;
+}
+h4{
+	font-size: 22px;
+}
+h5{
+    font-size: 18px;
+}
+// Text Helpers
+
+.text-primary {
+    color: $primary-color !important;
+}
+.text-dark {
+    color: $copy-color !important;
+}
+.text-white {
+    color: $white !important;
+}
+
+
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}

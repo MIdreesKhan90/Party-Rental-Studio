@@ -1,8 +1,7 @@
 $icons: (
-     "small-quote" "png" 30px 30px,
-     "play" "png" 20px 20px,
-
-    //  new design icon
+    "small-quote" "png" 30px 30px,
+    "play" "png" 20px 20px,
+        //  new design icon
     "arrow-right" "svg" 14px 14px,
     "quote-fill" "svg" 24px 24px,
     "quote-outline" "svg" 24px 24px,
@@ -14,19 +13,19 @@ $icons: (
     "delivery-routes" "svg" 28px 28px,
     "seo-friendly" "svg" 28px 28px,
     "manage-website" "svg" 25px 25px,
-     );
+);
 
 @each $name, $fileType, $width, $height in $icons {
-  .icon-#{$name} {
-    display: inline-block;
-    vertical-align: text-top;
-    background: url($icons-path + "/" + $name + "." + $fileType) no-repeat 0 0;
-    background-size: cover;
-    @if ($width != "") {
-      width: $width;
+    .icon-#{$name} {
+        display: inline-block;
+        vertical-align: text-top;
+        background: url($icons-path + "/" + $name + "." + $fileType) no-repeat 0 0;
+        background-size: cover;
+        @if ($width != "") {
+            width: $width;
+        }
+        @if ($height != "") {
+            height: $height;
+        }
     }
-    @if ($height != "") {
-      height: $height;
-    }
-  }
 }

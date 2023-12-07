@@ -1,0 +1,77 @@
+.articles-carousel,
+.reviews-carousel {
+  .slick-slide {
+    padding: 0 12px 0 0;
+  }
+
+  .icon-prev,
+  .icon-next {
+    display: block;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-prev {
+    background: url($icons-path + "/bx-chevron-left-primary.svg") no-repeat 0 0;
+  }
+
+  .icon-next {
+    background: url($icons-path + "/bx-chevron-left-primary.svg") no-repeat 0 0;
+    transform: rotate(180deg);
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $primary-color;
+    z-index: 1;
+    right: 0;
+    top: -95px;
+    padding: 6px;
+    @include grid-sm-down {
+      top: auto;
+      bottom: -40px;
+    }
+
+    &:disabled {
+      background-color: $primary-color;
+    }
+  }
+
+  .slick-prev {
+    right: 45px;
+  }
+
+  .slick-prev {
+    &:disabled {
+      .icon-prev {
+        background: url($icons-path + "/bx-chevron-right-white.svg") no-repeat 0 0;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .slick-next {
+    &:disabled {
+      .icon-next {
+        background: url($icons-path + "/bx-chevron-right-white.svg") no-repeat 0 0;
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+
+.reviews-carousel{
+  .slick-center {
+    .review {
+      border: 1px solid $primary-color;
+
+      .icon-quote-outline {
+        background: url($icons-path + "/quote-fill.svg") no-repeat 0 0;
+      }
+    }
+  }
+}

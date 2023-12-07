@@ -2,7 +2,7 @@
   padding-top: 130px;
   margin-top: -113px;
   background-image: url($images-path + "/design24/hero-bg-img.webp");
-  background-size: cover;
+  background-size: contain;
   overflow: hidden;
 
   @include grid-lg-down {
@@ -20,22 +20,19 @@
 
   .title {
     color: #2b3240;
-    font-family: $font-family-instrument;
-    font-size: 48px;
     font-weight: 700;
     line-height: 1.1em;
     margin: 0 auto;
     max-width: 677px;
     margin-bottom: 20px;
 
-    span {
-      color: #3b9768;
+    @include grid-sm-down {
+      font-size: 32px;
     }
   }
 
   .desc {
     color: #8f939a;
-    font-family: $font-family-instrument;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.3em;
@@ -43,19 +40,15 @@
   }
 
   .btn-primary {
-    padding: 16px 27px;
-    font-size: 18px;
-    font-weight: 500;
     margin-bottom: 41px;
-
-    i {
-      vertical-align: middle;
-      margin-left: 8px;
-    }
   }
 
   .hero-content {
     text-align: center;
+    margin-top: 34px;
+    @include grid-sm-down {
+      margin-top: 16px;
+    }
   }
   .hero-img {
     margin-bottom: -200px;
