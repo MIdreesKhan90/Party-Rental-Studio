@@ -7,15 +7,18 @@ body {
 /*--------------------------------------
 Body
 --------------------------------------*/
-html, body {
-    margin:0; padding:0; border:0;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-html{
-    position: relative;
-    min-height: 100%;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 main {
@@ -23,49 +26,54 @@ main {
 }
 
 a {
-    text-decoration: none;
-    color: #3B9768;
-    outline: 0;
-    border: none;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: #3B9768;
+  outline: 0;
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 img {
-    max-width: 100%;
-    vertical-align: middle;
-    display: inline-block;
-    border: 0;
-    height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  border: 0;
+  height: auto;
 }
 
 ul {
-    //padding:0;margin:0;
-    &.inline li {
-        display: inline-block;
-        list-style: none;
-    }
+
+  //padding:0;margin:0;
+  &.inline li {
+    display: inline-block;
+    list-style: none;
+  }
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 b,
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
-ul.inline, ol.inline {
+
+ul.inline,
+ol.inline {
   margin-left: 0;
   list-style: none;
 }
-nav ul, nav ol {
+
+nav ul,
+nav ol {
   list-style: none;
 }
 
@@ -73,9 +81,7 @@ nav ul, nav ol {
 Global Styles
 --------------------------------------*/
 
-main{
-
-}
+main {}
 
 /*--------------------------------------
 Header
@@ -84,24 +90,36 @@ header {
   color: #fff;
   padding: 0;
   position: relative;
+
   .headline {
-      padding: 60px 24px 36px;
-      text-align: center;
-      h1 {margin-bottom: 0.4rem;}
-      p {margin-bottom: 0;}
+    padding: 60px 24px 36px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 0.4rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
     @include grid-md {
       padding: 100px 60px 36px;
     }
+
     @include grid-lg {
       padding: 120px 120px 54px;
     }
+
     &.leftAligned {
       text-align: left;
       padding: 120px 14px 54px;
+
       h1 {
         font-size: 2.6rem;
       }
     }
+
     //not used
     &.reversed {
       padding: 120px 14px 0px;
@@ -109,9 +127,7 @@ header {
   }
 }
 
-header.front-page {
-  
-}
+header.front-page {}
 
 header.front-page:after {
   content: "";
@@ -132,13 +148,14 @@ header.front-page:after {
 
   @media only screen and (max-width: 1024px) {
     -webkit-transform: skewY(0deg);
-    transform: skewY(0deg); 
-    height: 40px;  
+    transform: skewY(0deg);
+    height: 40px;
   }
 
 }
 
-#sub-section, #sub-section-white {
+#sub-section,
+#sub-section-white {
   padding: 60px 0;
 }
 
@@ -150,7 +167,7 @@ header.front-page:after {
   background-color: #fafafa;
 
   &.light {
-    background: linear-gradient(160deg, rgba(244, 238, 230,0.5), #ffffff 20%, #ffffff 100%);
+    background: linear-gradient(160deg, rgba(244, 238, 230, 0.5), #ffffff 20%, #ffffff 100%);
   }
 
   .sub-section-wrapper {
@@ -175,17 +192,31 @@ Free Trial
   background: linear-gradient(90deg, #55b070 0%, #3b9768 100%);
   color: #fff;
   padding: 60px 0;
-  h2, p {color: #fff;}
-  h2 {text-align: left; font-size: 2.2rem; margin-bottom: 0.8rem !important;}
 
-  input[type=text], textarea {
+  h2,
+  p {
+    color: #fff;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem !important;
+  }
+
+  input[type=text],
+  textarea {
     padding: 6px 12px;
   }
 
   &.sub-plain {
     background: #fff;
     color: #444;
-    h2, p {color: #444;} 
+
+    h2,
+    p {
+      color: #444;
+    }
   }
 
 }
@@ -193,37 +224,40 @@ Free Trial
 /*--------------------------------------
 Right Column (Multi Column Articles)
 --------------------------------------*/
-  #sub-section {
-    aside {
+#sub-section {
+  aside {
 
-      ul {
-        margin: 0;
-        li {
-          list-style: none;
-          line-height: 1.2rem;
-          margin-bottom: 1.4rem;
-          border-bottom: 1px solid #efefef;
-          padding-bottom: 1.4rem;
-          &:last-child {
-            border-bottom: none;
-          }
-          a {
-            font-size: 0.9rem;
-          }
+    ul {
+      margin: 0;
+
+      li {
+        list-style: none;
+        line-height: 1.2rem;
+        margin-bottom: 1.4rem;
+        border-bottom: 1px solid #efefef;
+        padding-bottom: 1.4rem;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        a {
+          font-size: 0.9rem;
         }
       }
+    }
 
-      h2.widget-title {
-        font-size: 1.4rem;
-        margin-top: 1.2rem;
-        margin-bottom: 1.4rem;
-        //background-color: #fff;
-        color: #444;
-        font-weight: 500;
-        //padding: 4px 8px;
-      }
+    h2.widget-title {
+      font-size: 1.4rem;
+      margin-top: 1.2rem;
+      margin-bottom: 1.4rem;
+      //background-color: #fff;
+      color: #444;
+      font-weight: 500;
+      //padding: 4px 8px;
     }
   }
+}
 
 /*--------------------------------------
 Section > Form
@@ -231,66 +265,10 @@ Section > Form
 
 .section-form {
   padding: 90px 0;
+
   @include grid-lg-down {
     h2 {
       font-size: 24px;
-    }     
-  }
-}
-
-/*--------------------------------------
-Footer
---------------------------------------*/
-
-footer {
-  background-color: #fff;
-  //background-color: $secondary-color;
-  padding: 90px 0;
-
-  p,li, a {
-    font-size: 1.0rem;
-  }
-
-  .prslogo {
-    text-align: center;
-    img {
-      //max-width: 240px;
-    }
-    @include grid-lg {
-      text-align: left;
     }
   }
-
-  h4 {
-    font-weight: 500;
-    font-size: 1.3rem;
-    margin-bottom: 0px;
-    line-height: 1.0;
-    margin-top: 24px;
-    &.site-map {
-      margin-top: 0px;
-      @include grid-lg-down {
-         margin-top: 24px;
-      }      
-    }
-  }
-
-  .copyright {}
-
-  ul.footer-menu {
-    list-style: none;
-    padding-top: 10px;
-    margin: 0;
-    li {
-      a {
-        font-size: 1.0rem;
-        color: #3b9768;
-        img {
-          height: 1rem;
-          margin-left: 2px;
-        }
-      }
-    }
-  }
-
 }

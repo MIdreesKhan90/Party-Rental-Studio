@@ -5,22 +5,18 @@
     <meta name="description" content="{{ description }}"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
     <link href="https://partyrentalstudio.com/" rel="canonical"/>
     <link href="{{ '/assets/css/foundation.css' }}" rel="stylesheet">
     <link href="{{ '/css/styles.css' }}" rel="stylesheet">
-
     <script src="https://unpkg.com/@dotlottie/player-component@1.0.0/dist/dotlottie-player.js" defer></script>
     <script defer data-domain="partyrentalstudio.com" src="https://plausible.io/js/script.js"></script>
-
     <!-- Preload -->
     {# <link rel="preload" as="image" href="/images/landing-m.webp"> #}
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-v35-latin-700.woff2" crossorigin>
@@ -28,7 +24,6 @@
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/poppins-v20-latin-500.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/poppins-v20-latin-700.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/poppins-v20-latin-regular.woff2" crossorigin>
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -45,9 +40,7 @@
         t.async = 1;
         t.src = "https://www.clarity.ms/tag/" + i;
         y = l.getElementsByTagName(r)[0];
-        y
-          .parentNode
-          .insertBefore(t, y);
+        y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "j92fax65qa");
     </script>
   </head>
@@ -59,21 +52,21 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'G-FEKCMDJ2KX');
   </script>
   <body class="text-light">
     <div id="overlay"></div>
-
     <div id="toggleMenuContainer">
       <a href="#" class="toggle-nav">
-        <span></span></a>
+        <span></span>
+      </a>
     </div>
     <div id="primaryNav" class="primary-nav-wrapper">
       <div class="container-md">
         <div id="prs-logo-mobile">
           <a href="/">
-            <img src="{{ '/assets/images/partyrentalstudio.svg' }}" width="230" height="55" alt="Party Rental Studio Logo"></a>
+            <img src="{{ '/assets/images/partyrentalstudio.svg' }}" width="230" height="55" alt="Party Rental Studio Logo">
+          </a>
         </div>
         <nav class="primary-nav">
           <div class="left">
@@ -112,58 +105,67 @@
         </nav>
       </div>
     </div>
-
     <div class="main">
       {% block content %}
         {{ content | safe }}
       {% endblock %}
     </div>
 
-    <footer role="sitemap">
-      <div class="row">
-        <div class="small-24 medium-16 columns">
-          <img src="{{ '/assets/images/partyrentalstudio.svg' }}" width="240" height="57" alt="Party Rental Studio Logo">
-          <p>Everything you need to run a party rental business in one software.</p>
 
-          <h4>Email</h4>
-          <a href="mailto:support@partyrentalstudio.com">support@partyrentalstudio.com</a>
-          <h4>Phone</h4>
-          <a href="tel:8006194568">(800) 619-4568</a>
-        </div>
-        <div class="small-24 medium-8 columns">
-          <h4 class="site-map">Site Map</h4>
-          <ul class="footer-menu">
-            <li>
-              <a href="/pricing">Pricing</a>
-            </li>
-            <li>
-              <a href="/customer-testimonials">Testimonials</a>
-            </li>
-            <li>
-              <a href="/articles/1/">Articles</a>
-            </li>
-            <li>
-              <a href="/careers-at-party-rental-studio">Careers</a>
-            </li>
-            <li>
+
+    <footer role="sitemap" class="footer-section">
+      <div class="container-md">
+        <div class="footer-contact">
+          <div class="left">
+            <img src="{{ '/assets/images/partyrentalstudio-footer.svg' }}" width="213" height="51" alt="Party Rental Studio Logo">
+            <p class="left-desc">Everything you need to run a party rental business in one software.</p>
+            <a href="mailto:support@partyrentalstudio.com">support@partyrentalstudio.com</a>
+            <a href="tel:8006194568">(800) 619-4568</a>
+          </div>
+          <div class="right">
+            <div>
+              <h4 class="title">Site Map</h4>
+              <ul class="footer-menu">
+                <li>
+                  <a href="/pricing">Pricing</a>
+                </li>
+                <li>
+                  <a href="/customer-testimonials">Testimonials</a>
+                </li>
+                <li>
+                  <a href="/articles/1/">Articles</a>
+                </li>
+                <li>
+                  <a href="/careers-at-party-rental-studio">Careers</a>
+                </li>
+                <li>
+                  <a href="">Features</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="title">Important</h4>
+              <a href="https://app.partyrentalstudio.com/">Sign up for Free Trial</a>
               <a href="https://app.partyrentalstudio.com/">Sign In</a>
-            </li>
-          </ul>
-          <h4>Social</h4>
-          <a href="https://www.instagram.com/partyrentalstudio/" class="social-icons"><img src="/assets/images/social-ig.svg" width="24" height="24" alt="Instagram Social Profile"></a>
-          <a href="https://www.facebook.com/partyrentalstudio/" class="social-icons" style="margin-left: 6px;"><img src="/assets/images/social-fb.svg" width="24" height="24" alt="Facebook Social Profile"></a>
+            </div>
+            <div>
+              <h4>Social</h4>
+              <a href="https://www.instagram.com/partyrentalstudio/" class="social-icons"><img src="/assets/images/social-ig.svg" width="24" height="24" alt="Instagram Social Profile"></a>
+              <a href="https://www.facebook.com/partyrentalstudio/" class="social-icons" style="margin-left: 6px;"><img src="/assets/images/social-fb.svg" width="24" height="24" alt="Facebook Social Profile"></a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="row">
         <div class="small-24 columns">
           <hr>
           <p>&copy; Copyright Kreetiv LLC 2023. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
-
     <script defer src="{{ '/assets/js/vanilla-masker.min.js' }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="{{ '/assets/js/main.js' }}"></script>
-
   </body>
 </html>
